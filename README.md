@@ -59,7 +59,3 @@ Currently, the script uses these default settings:
 ## Legal Notice
 
 Please ensure you comply with SensCritique's terms of service and robots.txt when using this scraper. Implement appropriate delays between requests to avoid overwhelming their servers.
-
-## License
-
-[Add your chosen license here]
