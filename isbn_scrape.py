@@ -50,6 +50,8 @@ def scrape_book_urls(base_url, page_end, headers):
         else:
             print(f"Error fetching page {page_number}: Status code {response.status_code}")
             break
+
+    print(f"Scraped {len(all_book_urls)} book URLs")
     return all_book_urls
 
 def scrape_book_details(book_url, headers):
@@ -92,13 +94,16 @@ if __name__ == "__main__":
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36'
     }
 
+    # CHANGE THESE VALUES TO CHANGE THE COLLECTION SCRAPED
     base_url = "https://www.senscritique.com/spif/collection?universe=2"
     page_end = 5  # Currently hardcoded, should be made dynamic
 
     # Scrape book URLs
+    print("Scraping book URLs...")
     all_book_urls = scrape_book_urls(base_url, page_end, headers)
 
     # Scrape details for each book (this could be sped up with async requests)
+    print("Scraping individual book details...")
     all_books = []
     for i, book_url in enumerate(all_book_urls):
         book_details = scrape_book_details(book_url, headers)
