@@ -7,11 +7,10 @@ and then scrapes details from each book's page. The extracted data includes titl
 description, genres, rating, rating count, image URL, and publication date. Finally, it saves
 the collected data into a JSON file named 'books_data.json'.
 """
-
-import requests
 from bs4 import BeautifulSoup
 import time
 import json
+from security import safe_requests
 
 def scrape_book_urls(base_url, page_end, headers):
     """
@@ -29,7 +28,7 @@ def scrape_book_urls(base_url, page_end, headers):
     page_number = 1
     while page_number <= page_end:
         url = f"{base_url}?page={page_number}"
-        response = requests.get(url, headers=headers)
+        response = safe_requests.get(url, headers=headers)
         time.sleep(0.2)  # Respectful delay between requests
         if response.status_code == 200:
             soup = BeautifulSoup(response.content, 'html.parser')
@@ -61,7 +60,7 @@ def scrape_book_details(book_url, headers):
     Returns:
         dict: A dictionary containing book details.
     """
-    response = requests.get(book_url, headers=headers)
+    response = safe_requests.get(book_url, headers=headers)
     time.sleep(0.2)  # Respectful delay between requests
     if response.status_code == 200:
         soup = BeautifulSoup(response.content, 'html.parser')
