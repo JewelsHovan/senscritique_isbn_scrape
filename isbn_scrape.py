@@ -28,7 +28,7 @@ def scrape_book_urls(base_url, page_end, headers):
     all_book_urls = []
     page_number = 1
     while page_number <= page_end:
-        url = f"{base_url}?page={page_number}"
+        url = f"{base_url}?page={page_number}" # this is how we will navigate through the pages
         response = requests.get(url, headers=headers)
         time.sleep(0.2)  # Respectful delay between requests
         if response.status_code == 200:
@@ -38,9 +38,11 @@ def scrape_book_urls(base_url, page_end, headers):
             if not book_elements:  # No more books found, exit loop
                 break
 
+            # we iterate through the book elements and extract the book url
             for book_element in book_elements:
                 title_element = book_element.find('a', {'data-testid': 'product-title'})
                 if title_element:
+                    # we construct the book url by adding the href to the base url
                     book_url = "https://www.senscritique.com" + title_element['href']
                     all_book_urls.append(book_url)
 
@@ -85,7 +87,7 @@ def scrape_book_details(book_url, headers):
 
 
 if __name__ == "__main__":
-    # Define headers with a common browser User-Agent
+    # Define headers with a common browser User-Agent (this bypassses the bot detection)
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36'
     }
