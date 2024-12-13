@@ -284,574 +284,6 @@
         "publication_date": "2009-04-15T22:00:00.000Z"
     },
     {
-        "title": "La Métamorphose",
-        "author": [
-            "Franz Kafka"
-        ],
-        "isbn": "9782070414376",
-        "description": "Un matin Gregor s'aperçoit qu'il a une carapace de coléoptère. Il croit d'abord à un mauvais rêve, mais la métamorphose est bien réelle.",
-        "genres": [
-            "Nouvelle"
-        ],
-        "rating": 7.5,
-        "rating_count": 17818,
-        "image_url": "https://media.senscritique.com/media/000007433233/300/la_metamorphose.jpg",
-        "publication_date": "2014-07-30T14:46:06.000Z"
-    },
-    {
-        "title": "1Q84 : Livre 1",
-        "author": [
-            "Haruki Murakami"
-        ],
-        "isbn": "9782714447074",
-        "description": "Au Japon, en 1984. \r\nC'est l'histoire de deux mondes, celui réel de 1984 et un monde parallèle tout aussi vivant, celui de 1Q84. Deux mondes imbriqués dans lesquels évoluent, en alternance, Aomamé et Tengo, 29 ans tous deux, qui ont fréquenté la même école lorsqu'ils avaient dix ans. A l'époque, les autres enfants se moquaient d'Aomamé à cause de son prénom, « Haricot de soja », et de l'appartenance de ses parents à la nouvelle religion des Témoins. Un jour, Tengo l'a défendue et Aomamé lui a serré la main. Un pacte secret conclu entre deux enfants, le signe d'un amour pur dont ils auront toujours la nostalgie. \r\nEn 1984, chacun mène sa vie, ses amours, ses activités. \r\nTueuse professionnelle, Aomamé se croit investie d'une mission : exécuter les hommes qui ont fait violence aux femmes. Aomamé a aussi une particularité : la faculté innée de retenir quantité de faits, d'événements, de dates en rapport avec l'Histoire. \r\nTengo est un génie des maths, apprenti-écrivain et nègre pour un éditeur qui lui demande de réécrire l'autobiographie d'une jeune fille échappé de la secte des Précurseurs. Il est aussi régulièrement pris de malaises lors desquels il revoit une scène dont il a été témoin à l'âge d'un an et demi. \r\nLes deux jeunes gens sont destinés à se retrouver mais où ? Quand ? En 1984 ? Dans 1Q84 ? Dans cette vie ? Dans la mort ?",
-        "genres": [
-            "Roman",
-            "Fantastique"
-        ],
-        "rating": 7.1,
-        "rating_count": 3635,
-        "image_url": "https://media.senscritique.com/media/000019455020/300/1q84_livre_1.jpg",
-        "publication_date": "2010-03-13T23:00:00.000Z"
-    },
-    {
-        "title": "Ainsi parlait Zarathoustra",
-        "author": [
-            "Friedrich Nietzsche"
-        ],
-        "isbn": "9782253006756",
-        "description": "Ainsi parlait Zarathoustra est une œuvre philosophique magistrale. Elle a bouleversé la pensée de l'Occident. « Nietzsche démolit, il sape », disait Gide. Il remet définitivement l'homme en question. Poète-prophète, Zarathoustra se retire dans la montagne et revient parmi les hommes pour leur parler. Sa leçon essentielle : « Vouloir libère. » Son leitmotiv : rejeter ce qui n'est pas voulu, conquis comme tel, tout ce qui est subi. C'est le sens du fameux : « Deviens celui que tu es. » La vertu est souvent le droit du plus faible, elle paralyse tout, désir, création et joie. Le surhomme nietzschéen est celui qui a la plus grande diversité d'instincts qui s'opposent puissamment mais qu'il maîtrise.",
-        "genres": [
-            "Essai",
-            "Philosophie",
-            "Poésie"
-        ],
-        "rating": 8,
-        "rating_count": 4273,
-        "image_url": "https://media.senscritique.com/media/000004354994/300/ainsi_parlait_zarathoustra.jpg",
-        "publication_date": "2014-07-31T02:42:03.000Z"
-    },
-    {
-        "title": "Gagner la guerre",
-        "author": [
-            "Jean-Philippe Jaworski"
-        ],
-        "isbn": "9782070437412",
-        "description": "Don Benvenuto est au service du Podestat de la République mais est toujours très habile pour se fourrer dans les pires situations qui soient.",
-        "genres": [
-            "Roman",
-            "Fantasy"
-        ],
-        "rating": 8.4,
-        "rating_count": 3857,
-        "image_url": "https://media.senscritique.com/media/000017840343/300/gagner_la_guerre.jpg",
-        "publication_date": "2009-04-23T22:00:00.000Z"
-    },
-    {
-        "title": "Candide ou l'Optimisme",
-        "author": [
-            "Voltaire"
-        ],
-        "isbn": "9782290038598",
-        "description": "Candide était amoureux de Cunégonde, fille du baron. Il surprend les amoureux et chasse Candide. Son existence ne sera plus qu’une suite de malheurs.",
-        "genres": [
-            "Conte",
-            "Roman",
-            "Philosophie"
-        ],
-        "rating": 6.9,
-        "rating_count": 34702,
-        "image_url": "https://media.senscritique.com/media/000018310069/300/candide_ou_l_optimisme.jpg",
-        "publication_date": "2014-07-31T00:50:03.000Z"
-    },
-    {
-        "title": "Hypérion",
-        "author": [
-            "Dan Simmons"
-        ],
-        "isbn": null,
-        "description": "Hypérion, le port spatial, offre un spectacle de fin du monde. Des millions d'habitants de la planète sont sûrs que le gritche va venir les prendre.",
-        "genres": [
-            "Roman",
-            "Science-fiction"
-        ],
-        "rating": 8,
-        "rating_count": 4997,
-        "image_url": "https://media.senscritique.com/media/000007607303/300/hyperion.jpg",
-        "publication_date": "2014-07-30T20:42:05.000Z"
-    },
-    {
-        "title": "Les Misérables",
-        "author": [
-            "Victor Hugo"
-        ],
-        "isbn": "9782035834256",
-        "description": "Cosette et Marius sont deux âmes disposées à s'aimer. Mais Jean Valjean veille, lui, l'ancien bagnard dont Cosette est devenue la seule raison de vivre.",
-        "genres": [
-            "Roman"
-        ],
-        "rating": 8,
-        "rating_count": 13047,
-        "image_url": "https://media.senscritique.com/media/000020245094/300/les_miserables.jpg",
-        "publication_date": "2014-07-30T23:49:04.000Z"
-    },
-    {
-        "title": "Fondation - Le Cycle de Fondation, tome 1",
-        "author": [
-            "Isaac Asimov"
-        ],
-        "isbn": "9782070415700",
-        "description": "Une ère de ténèbres de 30 000 ans est prévue. Avec la Fondation, chargée de rassembler toutes les connaissances humaines, on peut la réduire.",
-        "genres": [
-            "Science-fiction",
-            "Roman"
-        ],
-        "rating": 8.1,
-        "rating_count": 11456,
-        "image_url": "https://media.senscritique.com/media/000016623850/300/fondation_le_cycle_de_fondation_tome_1.png",
-        "publication_date": "2014-07-31T06:35:04.000Z"
-    },
-    {
-        "title": "Les Fleurs du mal",
-        "author": [
-            "Charles Baudelaire"
-        ],
-        "isbn": "9782081204676",
-        "description": "Une oeuvre sous forme de recueil de poèmes divisé en six parties : Spleen et idéal, Tableaux parisiens, le Vin, les Fleurs du mal, Révolte et la Mort.",
-        "genres": [
-            "Poésie"
-        ],
-        "rating": 8.2,
-        "rating_count": 47142,
-        "image_url": "https://media.senscritique.com/media/000006655127/300/les_fleurs_du_mal.jpg",
-        "publication_date": "2014-07-31T06:35:04.000Z"
-    },
-    {
-        "title": "Ma Mercedes est plus grosse que la tienne",
-        "author": [
-            "Nkem Nwankwo"
-        ],
-        "isbn": "9782842610456",
-        "description": "",
-        "genres": [
-            "Roman"
-        ],
-        "rating": 6.6,
-        "rating_count": 12,
-        "image_url": "https://media.senscritique.com/media/000000111488/300/ma_mercedes_est_plus_grosse_que_la_tienne.jpg",
-        "publication_date": "2011-04-02T22:00:00.000Z"
-    },
-    {
-        "title": "Le Monde de Barney",
-        "author": [
-            "Mordecai Richler"
-        ],
-        "isbn": "9782253149958",
-        "description": "Drôle de vie que celle de Barney !\r\nBarney Panofsky, juif canadien, expatrié dans les années cinquante à Paris, où il a côtoyé la bohème artistique. De retour au pays, il devient importateur de fromages français, puis producteur de télévision.\r\nDe ses trois épouses, la première, nymphomane, se suicidera. Il abandonnera la deuxième le jour même de leur mariage. Quant à la troisième, elle le quittera au bout de trente-six ans.\r\nAccusé du meurtre d'un de ses copains, Barney finira solitaire et poivrot, laissant cette autobiographie.\r\nDrôle d'histoire ? Oui. Ecrite d'une plume virtuose, avec un humour et un souffle ahurissants. Et l'un des plus grands romans du Canada anglophone d'aujourd'hui.",
-        "genres": [
-            "Roman"
-        ],
-        "rating": 8.1,
-        "rating_count": 18,
-        "image_url": "https://media.senscritique.com/media/000000157603/300/le_monde_de_barney.jpg",
-        "publication_date": "2010-09-23T22:00:00.000Z"
-    },
-    {
-        "title": "Les Guerriers de l'hiver",
-        "author": [
-            "Olivier Norek"
-        ],
-        "isbn": "9782749947204",
-        "description": "« Je suis certain que nous avons réveillé leur satané Sisu.\r\n– Je ne parle pas leur langue, camarade.\r\n– Et je ne pourrais te traduire ce mot, car il n’a d’équivalent nulle part ailleurs. Le Sisu est l’âme de la Finlande. Il dit le courage, la force intérieure, la ténacité, la résistance, la détermination…\r\nUne vie austère, dans un environnement hostile, a forgé leur mental d’un acier qui nous résiste aujourd’hui. »\r\nImaginez un pays minuscule.\r\nImaginez-en un autre, gigantesque.\r\nImaginez maintenant qu’ils s’affrontent.\r\nAu cœur du plus mordant de ses hivers, au cœur de la guerre la plus meurtrière de son histoire, un peuple se dresse contre l’ennemi, et parmi ses soldats naît une légende.\r\nLa légende de Simo, la Mort Blanche.",
-        "genres": [
-            "Roman"
-        ],
-        "rating": 7.6,
-        "rating_count": 106,
-        "image_url": "https://media.senscritique.com/media/000022304843/300/les_guerriers_de_l_hiver.webp",
-        "publication_date": null
-    },
-    {
-        "title": "Je n'ai pas de bouche et il faut que je crie",
-        "author": [
-            "Harlan Ellison"
-        ],
-        "isbn": "9781497609617",
-        "description": "Contient les nouvelles: \r\n- I Have No Mouth and I Must Scream \r\n- Big Sam Was My Friend\r\n- Eyes of Dust\r\n- World of the Myth\r\n- Lonelyache\r\n- Delusion for a Dragon Slayer\r\n- Pretty Maggie Moneyeyes.",
-        "genres": [
-            "Recueil de nouvelles"
-        ],
-        "rating": 7.7,
-        "rating_count": 203,
-        "image_url": "https://media.senscritique.com/media/000006755712/300/je_n_ai_pas_de_bouche_et_il_faut_que_je_crie.jpg",
-        "publication_date": "2011-01-05T23:00:00.000Z"
-    },
-    {
-        "title": "1984",
-        "author": [
-            "George Orwell"
-        ],
-        "isbn": "9782070368228",
-        "description": "De tous les carrefours importants, le visage à la moustache noire vous fixait du regard. Il y en a un sur le mur d'en face. Big brother vous regarde.",
-        "genres": [
-            "Roman",
-            "Science-fiction"
-        ],
-        "rating": 8.3,
-        "rating_count": 90515,
-        "image_url": "https://media.senscritique.com/media/000004731893/300/1984.jpg",
-        "publication_date": "2014-07-31T00:06:04.000Z"
-    },
-    {
-        "title": "La Mort immortelle",
-        "author": [
-            "Liu Cixin"
-        ],
-        "isbn": "9781466853454",
-        "description": "Un demi-siècle après l’Ultime Bataille, l’équilibre précaire dû à la dissuasion de la forêt sombre continue de maintenir les envahisseurs trisolariens à distance. La Terre jouit d’une prospérité sans précédent due au transfert des connaissances et des technologies trisolariennes. La science humaine connaît des progrès pour ainsi dire quotidiens, les Trisolariens découvrent avec fascination la culture humaine et l’espoir grandit que les deux civilisations puissent bientôt coexister pacifiquement sans la terrible menace d’une annihilation réciproque. Mais lorsqu’une ingénieure en aéronautique originaire du début du XXIe siècle sort de son hibernation, elle réveille avec elle le souvenir d’un programme qui menace cet équilibre. Bientôt, l’humanité aura à faire un choix : partir à la conquête d’autres univers ou mourir dans son berceau. Après Le Problème à trois corps et La Forêt sombre, Liu Cixin referme l’un des cycles de science-fiction les plus ambitieux de ce siècle.",
-        "genres": [
-            "Roman",
-            "Science-fiction"
-        ],
-        "rating": 8,
-        "rating_count": 795,
-        "image_url": "https://media.senscritique.com/media/000018054969/300/la_mort_immortelle.jpg",
-        "publication_date": "2015-05-27T14:36:01.000Z"
-    },
-    {
-        "title": "Contes et récits des arts martiaux de Chine et du Japon",
-        "author": [
-            "Michel Random",
-            "Pascal Fauliot"
-        ],
-        "isbn": "9782226021205",
-        "description": "Un héritage millénaire de textes tournant autour des arts martiaux s'est vu réuni dans un livre par Pascal Fauliot et préfacé par Michel Random.",
-        "genres": [
-            "Conte",
-            "Récit"
-        ],
-        "rating": 7.1,
-        "rating_count": 14,
-        "image_url": "https://media.senscritique.com/media/000006157180/300/Contes_et_recits_des_arts_martiaux_de_Chine_et_du_Japon.jpg",
-        "publication_date": "2014-01-08T16:24:12.000Z"
-    },
-    {
-        "title": "La Forêt sombre",
-        "author": [
-            "Liu Cixin"
-        ],
-        "isbn": "9782330082314",
-        "description": "L'humanité le sait désormais : dans un peu plus de quatre siècles, la flotte trisolarienne envahira le système solaire. La Terre doit impérativement préparer la parade, mais tout progrès dans les sciences fondamentales est entravé par les intellectrons. Grâce à ces derniers, les Trisolariens peuvent espionner toutes les conversations et tous les ordinateurs, en revanche ils sont incapables de lire dans l'âme humaine. Parallèlement aux programmes de défense classiques visant à lever des armées spatiales nationales, le Conseil de défense planétaire imagine donc un nouveau projet : le programme Colmateur. Quatre individus seront chargés d'élaborer chacun de leur côté des stratégies pour contrer l'invasion ennemie, sans en révéler la nature. Ils auront à leur disposition un budget presque illimité et pourront agir comme bon leur semble, sans avoir besoin de se justifier. Livrés à eux-mêmes, ils devront penser seuls, et brouiller les pistes. Trois des hommes désignés sont des personnalités politiques de premier plan et des scientifiques éminents, mais le quatrième est un parfait anonyme. Astronome et professeur de sociologie sans envergure, le Chinois Luo Ji ignore totalement la raison pour laquelle on lui confie cette mission. Tout ce qu'il sait, c'est qu'il est désormais l'un des Colmateurs, et que les Trisolariens veulent sa mort. Après Le Problème à trois corps, Liu Cixin revient avec une suite haletante et magistrale.",
-        "genres": [
-            "Science-fiction",
-            "Roman"
-        ],
-        "rating": 8,
-        "rating_count": 1053,
-        "image_url": "https://media.senscritique.com/media/000017316314/300/la_foret_sombre.jpg",
-        "publication_date": "2017-10-10T12:56:20.000Z"
-    },
-    {
-        "title": "L'Assassin du roi",
-        "author": [
-            "Robin Hobb (Megan Lindholm)"
-        ],
-        "isbn": "9782857045670",
-        "description": "Fitz, le bâtard royal, a survécu à sa première mission meurtrière, mais son contact avec la mort lui a laissé d’inaltérables séquelles. Revenu à Castelcerf, il retrouve celle qu’il a aimée, mais ne peut lui déclarer sa flamme sous peine de la condamner irrémédiablement. Car autour de lui, la cour fourmille d’intrigue, les menaces se resserrent, la mort rôde. Il a pourtant quelques alliés dans la place : un prince qui lui fait découvrir les mystères d’une magie toute puissante, un maître assassin qui lui veut malgré tout du bien, et un loup, avec qui il partage un lien étrange et périlleux...",
-        "genres": [
-            "Roman",
-            "Fantasy"
-        ],
-        "rating": 7.8,
-        "rating_count": 3987,
-        "image_url": "https://media.senscritique.com/media/000017570982/300/l_assassin_du_roi_l_assassin_royal_tome_2.jpg",
-        "publication_date": "2009-04-15T22:00:00.000Z"
-    },
-    {
-        "title": "La Métamorphose",
-        "author": [
-            "Franz Kafka"
-        ],
-        "isbn": "9782070414376",
-        "description": "Un matin Gregor s'aperçoit qu'il a une carapace de coléoptère. Il croit d'abord à un mauvais rêve, mais la métamorphose est bien réelle.",
-        "genres": [
-            "Nouvelle"
-        ],
-        "rating": 7.5,
-        "rating_count": 17818,
-        "image_url": "https://media.senscritique.com/media/000007433233/300/la_metamorphose.jpg",
-        "publication_date": "2014-07-30T14:46:06.000Z"
-    },
-    {
-        "title": "1Q84 : Livre 1",
-        "author": [
-            "Haruki Murakami"
-        ],
-        "isbn": "9782714447074",
-        "description": "Au Japon, en 1984. \r\nC'est l'histoire de deux mondes, celui réel de 1984 et un monde parallèle tout aussi vivant, celui de 1Q84. Deux mondes imbriqués dans lesquels évoluent, en alternance, Aomamé et Tengo, 29 ans tous deux, qui ont fréquenté la même école lorsqu'ils avaient dix ans. A l'époque, les autres enfants se moquaient d'Aomamé à cause de son prénom, « Haricot de soja », et de l'appartenance de ses parents à la nouvelle religion des Témoins. Un jour, Tengo l'a défendue et Aomamé lui a serré la main. Un pacte secret conclu entre deux enfants, le signe d'un amour pur dont ils auront toujours la nostalgie. \r\nEn 1984, chacun mène sa vie, ses amours, ses activités. \r\nTueuse professionnelle, Aomamé se croit investie d'une mission : exécuter les hommes qui ont fait violence aux femmes. Aomamé a aussi une particularité : la faculté innée de retenir quantité de faits, d'événements, de dates en rapport avec l'Histoire. \r\nTengo est un génie des maths, apprenti-écrivain et nègre pour un éditeur qui lui demande de réécrire l'autobiographie d'une jeune fille échappé de la secte des Précurseurs. Il est aussi régulièrement pris de malaises lors desquels il revoit une scène dont il a été témoin à l'âge d'un an et demi. \r\nLes deux jeunes gens sont destinés à se retrouver mais où ? Quand ? En 1984 ? Dans 1Q84 ? Dans cette vie ? Dans la mort ?",
-        "genres": [
-            "Roman",
-            "Fantastique"
-        ],
-        "rating": 7.1,
-        "rating_count": 3635,
-        "image_url": "https://media.senscritique.com/media/000019455020/300/1q84_livre_1.jpg",
-        "publication_date": "2010-03-13T23:00:00.000Z"
-    },
-    {
-        "title": "Ainsi parlait Zarathoustra",
-        "author": [
-            "Friedrich Nietzsche"
-        ],
-        "isbn": "9782253006756",
-        "description": "Ainsi parlait Zarathoustra est une œuvre philosophique magistrale. Elle a bouleversé la pensée de l'Occident. « Nietzsche démolit, il sape », disait Gide. Il remet définitivement l'homme en question. Poète-prophète, Zarathoustra se retire dans la montagne et revient parmi les hommes pour leur parler. Sa leçon essentielle : « Vouloir libère. » Son leitmotiv : rejeter ce qui n'est pas voulu, conquis comme tel, tout ce qui est subi. C'est le sens du fameux : « Deviens celui que tu es. » La vertu est souvent le droit du plus faible, elle paralyse tout, désir, création et joie. Le surhomme nietzschéen est celui qui a la plus grande diversité d'instincts qui s'opposent puissamment mais qu'il maîtrise.",
-        "genres": [
-            "Essai",
-            "Philosophie",
-            "Poésie"
-        ],
-        "rating": 8,
-        "rating_count": 4273,
-        "image_url": "https://media.senscritique.com/media/000004354994/300/ainsi_parlait_zarathoustra.jpg",
-        "publication_date": "2014-07-31T02:42:03.000Z"
-    },
-    {
-        "title": "Gagner la guerre",
-        "author": [
-            "Jean-Philippe Jaworski"
-        ],
-        "isbn": "9782070437412",
-        "description": "Don Benvenuto est au service du Podestat de la République mais est toujours très habile pour se fourrer dans les pires situations qui soient.",
-        "genres": [
-            "Roman",
-            "Fantasy"
-        ],
-        "rating": 8.4,
-        "rating_count": 3857,
-        "image_url": "https://media.senscritique.com/media/000017840343/300/gagner_la_guerre.jpg",
-        "publication_date": "2009-04-23T22:00:00.000Z"
-    },
-    {
-        "title": "Candide ou l'Optimisme",
-        "author": [
-            "Voltaire"
-        ],
-        "isbn": "9782290038598",
-        "description": "Candide était amoureux de Cunégonde, fille du baron. Il surprend les amoureux et chasse Candide. Son existence ne sera plus qu’une suite de malheurs.",
-        "genres": [
-            "Conte",
-            "Roman",
-            "Philosophie"
-        ],
-        "rating": 6.9,
-        "rating_count": 34702,
-        "image_url": "https://media.senscritique.com/media/000018310069/300/candide_ou_l_optimisme.jpg",
-        "publication_date": "2014-07-31T00:50:03.000Z"
-    },
-    {
-        "title": "Hypérion",
-        "author": [
-            "Dan Simmons"
-        ],
-        "isbn": null,
-        "description": "Hypérion, le port spatial, offre un spectacle de fin du monde. Des millions d'habitants de la planète sont sûrs que le gritche va venir les prendre.",
-        "genres": [
-            "Roman",
-            "Science-fiction"
-        ],
-        "rating": 8,
-        "rating_count": 4997,
-        "image_url": "https://media.senscritique.com/media/000007607303/300/hyperion.jpg",
-        "publication_date": "2014-07-30T20:42:05.000Z"
-    },
-    {
-        "title": "Les Misérables",
-        "author": [
-            "Victor Hugo"
-        ],
-        "isbn": "9782035834256",
-        "description": "Cosette et Marius sont deux âmes disposées à s'aimer. Mais Jean Valjean veille, lui, l'ancien bagnard dont Cosette est devenue la seule raison de vivre.",
-        "genres": [
-            "Roman"
-        ],
-        "rating": 8,
-        "rating_count": 13047,
-        "image_url": "https://media.senscritique.com/media/000020245094/300/les_miserables.jpg",
-        "publication_date": "2014-07-30T23:49:04.000Z"
-    },
-    {
-        "title": "Fondation - Le Cycle de Fondation, tome 1",
-        "author": [
-            "Isaac Asimov"
-        ],
-        "isbn": "9782070415700",
-        "description": "Une ère de ténèbres de 30 000 ans est prévue. Avec la Fondation, chargée de rassembler toutes les connaissances humaines, on peut la réduire.",
-        "genres": [
-            "Science-fiction",
-            "Roman"
-        ],
-        "rating": 8.1,
-        "rating_count": 11456,
-        "image_url": "https://media.senscritique.com/media/000016623850/300/fondation_le_cycle_de_fondation_tome_1.png",
-        "publication_date": "2014-07-31T06:35:04.000Z"
-    },
-    {
-        "title": "Les Fleurs du mal",
-        "author": [
-            "Charles Baudelaire"
-        ],
-        "isbn": "9782081204676",
-        "description": "Une oeuvre sous forme de recueil de poèmes divisé en six parties : Spleen et idéal, Tableaux parisiens, le Vin, les Fleurs du mal, Révolte et la Mort.",
-        "genres": [
-            "Poésie"
-        ],
-        "rating": 8.2,
-        "rating_count": 47142,
-        "image_url": "https://media.senscritique.com/media/000006655127/300/les_fleurs_du_mal.jpg",
-        "publication_date": "2014-07-31T06:35:04.000Z"
-    },
-    {
-        "title": "Le Monde de Barney",
-        "author": [
-            "Mordecai Richler"
-        ],
-        "isbn": "9782253149958",
-        "description": "Drôle de vie que celle de Barney !\r\nBarney Panofsky, juif canadien, expatrié dans les années cinquante à Paris, où il a côtoyé la bohème artistique. De retour au pays, il devient importateur de fromages français, puis producteur de télévision.\r\nDe ses trois épouses, la première, nymphomane, se suicidera. Il abandonnera la deuxième le jour même de leur mariage. Quant à la troisième, elle le quittera au bout de trente-six ans.\r\nAccusé du meurtre d'un de ses copains, Barney finira solitaire et poivrot, laissant cette autobiographie.\r\nDrôle d'histoire ? Oui. Ecrite d'une plume virtuose, avec un humour et un souffle ahurissants. Et l'un des plus grands romans du Canada anglophone d'aujourd'hui.",
-        "genres": [
-            "Roman"
-        ],
-        "rating": 8.1,
-        "rating_count": 18,
-        "image_url": "https://media.senscritique.com/media/000000157603/300/le_monde_de_barney.jpg",
-        "publication_date": "2010-09-23T22:00:00.000Z"
-    },
-    {
-        "title": "Ma Mercedes est plus grosse que la tienne",
-        "author": [
-            "Nkem Nwankwo"
-        ],
-        "isbn": "9782842610456",
-        "description": "",
-        "genres": [
-            "Roman"
-        ],
-        "rating": 6.6,
-        "rating_count": 12,
-        "image_url": "https://media.senscritique.com/media/000000111488/300/ma_mercedes_est_plus_grosse_que_la_tienne.jpg",
-        "publication_date": "2011-04-02T22:00:00.000Z"
-    },
-    {
-        "title": "Les Guerriers de l'hiver",
-        "author": [
-            "Olivier Norek"
-        ],
-        "isbn": "9782749947204",
-        "description": "« Je suis certain que nous avons réveillé leur satané Sisu.\r\n– Je ne parle pas leur langue, camarade.\r\n– Et je ne pourrais te traduire ce mot, car il n’a d’équivalent nulle part ailleurs. Le Sisu est l’âme de la Finlande. Il dit le courage, la force intérieure, la ténacité, la résistance, la détermination…\r\nUne vie austère, dans un environnement hostile, a forgé leur mental d’un acier qui nous résiste aujourd’hui. »\r\nImaginez un pays minuscule.\r\nImaginez-en un autre, gigantesque.\r\nImaginez maintenant qu’ils s’affrontent.\r\nAu cœur du plus mordant de ses hivers, au cœur de la guerre la plus meurtrière de son histoire, un peuple se dresse contre l’ennemi, et parmi ses soldats naît une légende.\r\nLa légende de Simo, la Mort Blanche.",
-        "genres": [
-            "Roman"
-        ],
-        "rating": 7.6,
-        "rating_count": 106,
-        "image_url": "https://media.senscritique.com/media/000022304843/300/les_guerriers_de_l_hiver.webp",
-        "publication_date": null
-    },
-    {
-        "title": "Je n'ai pas de bouche et il faut que je crie",
-        "author": [
-            "Harlan Ellison"
-        ],
-        "isbn": "9781497609617",
-        "description": "Contient les nouvelles: \r\n- I Have No Mouth and I Must Scream \r\n- Big Sam Was My Friend\r\n- Eyes of Dust\r\n- World of the Myth\r\n- Lonelyache\r\n- Delusion for a Dragon Slayer\r\n- Pretty Maggie Moneyeyes.",
-        "genres": [
-            "Recueil de nouvelles"
-        ],
-        "rating": 7.7,
-        "rating_count": 203,
-        "image_url": "https://media.senscritique.com/media/000006755712/300/je_n_ai_pas_de_bouche_et_il_faut_que_je_crie.jpg",
-        "publication_date": "2011-01-05T23:00:00.000Z"
-    },
-    {
-        "title": "1984",
-        "author": [
-            "George Orwell"
-        ],
-        "isbn": "9782070368228",
-        "description": "De tous les carrefours importants, le visage à la moustache noire vous fixait du regard. Il y en a un sur le mur d'en face. Big brother vous regarde.",
-        "genres": [
-            "Roman",
-            "Science-fiction"
-        ],
-        "rating": 8.3,
-        "rating_count": 90515,
-        "image_url": "https://media.senscritique.com/media/000004731893/300/1984.jpg",
-        "publication_date": "2014-07-31T00:06:04.000Z"
-    },
-    {
-        "title": "La Mort immortelle",
-        "author": [
-            "Liu Cixin"
-        ],
-        "isbn": "9781466853454",
-        "description": "Un demi-siècle après l’Ultime Bataille, l’équilibre précaire dû à la dissuasion de la forêt sombre continue de maintenir les envahisseurs trisolariens à distance. La Terre jouit d’une prospérité sans précédent due au transfert des connaissances et des technologies trisolariennes. La science humaine connaît des progrès pour ainsi dire quotidiens, les Trisolariens découvrent avec fascination la culture humaine et l’espoir grandit que les deux civilisations puissent bientôt coexister pacifiquement sans la terrible menace d’une annihilation réciproque. Mais lorsqu’une ingénieure en aéronautique originaire du début du XXIe siècle sort de son hibernation, elle réveille avec elle le souvenir d’un programme qui menace cet équilibre. Bientôt, l’humanité aura à faire un choix : partir à la conquête d’autres univers ou mourir dans son berceau. Après Le Problème à trois corps et La Forêt sombre, Liu Cixin referme l’un des cycles de science-fiction les plus ambitieux de ce siècle.",
-        "genres": [
-            "Roman",
-            "Science-fiction"
-        ],
-        "rating": 8,
-        "rating_count": 795,
-        "image_url": "https://media.senscritique.com/media/000018054969/300/la_mort_immortelle.jpg",
-        "publication_date": "2015-05-27T14:36:01.000Z"
-    },
-    {
-        "title": "Contes et récits des arts martiaux de Chine et du Japon",
-        "author": [
-            "Michel Random",
-            "Pascal Fauliot"
-        ],
-        "isbn": "9782226021205",
-        "description": "Un héritage millénaire de textes tournant autour des arts martiaux s'est vu réuni dans un livre par Pascal Fauliot et préfacé par Michel Random.",
-        "genres": [
-            "Conte",
-            "Récit"
-        ],
-        "rating": 7.1,
-        "rating_count": 14,
-        "image_url": "https://media.senscritique.com/media/000006157180/300/Contes_et_recits_des_arts_martiaux_de_Chine_et_du_Japon.jpg",
-        "publication_date": "2014-01-08T16:24:12.000Z"
-    },
-    {
-        "title": "La Forêt sombre",
-        "author": [
-            "Liu Cixin"
-        ],
-        "isbn": "9782330082314",
-        "description": "L'humanité le sait désormais : dans un peu plus de quatre siècles, la flotte trisolarienne envahira le système solaire. La Terre doit impérativement préparer la parade, mais tout progrès dans les sciences fondamentales est entravé par les intellectrons. Grâce à ces derniers, les Trisolariens peuvent espionner toutes les conversations et tous les ordinateurs, en revanche ils sont incapables de lire dans l'âme humaine. Parallèlement aux programmes de défense classiques visant à lever des armées spatiales nationales, le Conseil de défense planétaire imagine donc un nouveau projet : le programme Colmateur. Quatre individus seront chargés d'élaborer chacun de leur côté des stratégies pour contrer l'invasion ennemie, sans en révéler la nature. Ils auront à leur disposition un budget presque illimité et pourront agir comme bon leur semble, sans avoir besoin de se justifier. Livrés à eux-mêmes, ils devront penser seuls, et brouiller les pistes. Trois des hommes désignés sont des personnalités politiques de premier plan et des scientifiques éminents, mais le quatrième est un parfait anonyme. Astronome et professeur de sociologie sans envergure, le Chinois Luo Ji ignore totalement la raison pour laquelle on lui confie cette mission. Tout ce qu'il sait, c'est qu'il est désormais l'un des Colmateurs, et que les Trisolariens veulent sa mort. Après Le Problème à trois corps, Liu Cixin revient avec une suite haletante et magistrale.",
-        "genres": [
-            "Science-fiction",
-            "Roman"
-        ],
-        "rating": 8,
-        "rating_count": 1053,
-        "image_url": "https://media.senscritique.com/media/000017316314/300/la_foret_sombre.jpg",
-        "publication_date": "2017-10-10T12:56:20.000Z"
-    },
-    {
-        "title": "L'Assassin du roi",
-        "author": [
-            "Robin Hobb (Megan Lindholm)"
-        ],
-        "isbn": "9782857045670",
-        "description": "Fitz, le bâtard royal, a survécu à sa première mission meurtrière, mais son contact avec la mort lui a laissé d’inaltérables séquelles. Revenu à Castelcerf, il retrouve celle qu’il a aimée, mais ne peut lui déclarer sa flamme sous peine de la condamner irrémédiablement. Car autour de lui, la cour fourmille d’intrigue, les menaces se resserrent, la mort rôde. Il a pourtant quelques alliés dans la place : un prince qui lui fait découvrir les mystères d’une magie toute puissante, un maître assassin qui lui veut malgré tout du bien, et un loup, avec qui il partage un lien étrange et périlleux...",
-        "genres": [
-            "Roman",
-            "Fantasy"
-        ],
-        "rating": 7.8,
-        "rating_count": 3987,
-        "image_url": "https://media.senscritique.com/media/000017570982/300/l_assassin_du_roi_l_assassin_royal_tome_2.jpg",
-        "publication_date": "2009-04-15T22:00:00.000Z"
-    },
-    {
         "title": "1Q84 : Livre 1",
         "author": [
             "Haruki Murakami"
@@ -900,22 +332,6 @@
         "publication_date": "2014-07-31T02:42:03.000Z"
     },
     {
-        "title": "Gagner la guerre",
-        "author": [
-            "Jean-Philippe Jaworski"
-        ],
-        "isbn": "9782070437412",
-        "description": "Don Benvenuto est au service du Podestat de la République mais est toujours très habile pour se fourrer dans les pires situations qui soient.",
-        "genres": [
-            "Roman",
-            "Fantasy"
-        ],
-        "rating": 8.4,
-        "rating_count": 3857,
-        "image_url": "https://media.senscritique.com/media/000017840343/300/gagner_la_guerre.jpg",
-        "publication_date": "2009-04-23T22:00:00.000Z"
-    },
-    {
         "title": "Candide ou l'Optimisme",
         "author": [
             "Voltaire"
@@ -931,6 +347,22 @@
         "rating_count": 34702,
         "image_url": "https://media.senscritique.com/media/000018310069/300/candide_ou_l_optimisme.jpg",
         "publication_date": "2014-07-31T00:50:03.000Z"
+    },
+    {
+        "title": "Gagner la guerre",
+        "author": [
+            "Jean-Philippe Jaworski"
+        ],
+        "isbn": "9782070437412",
+        "description": "Don Benvenuto est au service du Podestat de la République mais est toujours très habile pour se fourrer dans les pires situations qui soient.",
+        "genres": [
+            "Roman",
+            "Fantasy"
+        ],
+        "rating": 8.4,
+        "rating_count": 3857,
+        "image_url": "https://media.senscritique.com/media/000017840343/300/gagner_la_guerre.jpg",
+        "publication_date": "2009-04-23T22:00:00.000Z"
     },
     {
         "title": "Hypérion",
@@ -1248,6 +680,22 @@
         "publication_date": "2014-07-30T23:49:04.000Z"
     },
     {
+        "title": "Fondation - Le Cycle de Fondation, tome 1",
+        "author": [
+            "Isaac Asimov"
+        ],
+        "isbn": "9782070415700",
+        "description": "Une ère de ténèbres de 30 000 ans est prévue. Avec la Fondation, chargée de rassembler toutes les connaissances humaines, on peut la réduire.",
+        "genres": [
+            "Science-fiction",
+            "Roman"
+        ],
+        "rating": 8.1,
+        "rating_count": 11456,
+        "image_url": "https://media.senscritique.com/media/000016623850/300/fondation_le_cycle_de_fondation_tome_1.png",
+        "publication_date": "2014-07-31T06:35:04.000Z"
+    },
+    {
         "title": "Les Fleurs du mal",
         "author": [
             "Charles Baudelaire"
@@ -1263,6 +711,259 @@
         "publication_date": "2014-07-31T06:35:04.000Z"
     },
     {
+        "title": "Le Monde de Barney",
+        "author": [
+            "Mordecai Richler"
+        ],
+        "isbn": "9782253149958",
+        "description": "Drôle de vie que celle de Barney !\r\nBarney Panofsky, juif canadien, expatrié dans les années cinquante à Paris, où il a côtoyé la bohème artistique. De retour au pays, il devient importateur de fromages français, puis producteur de télévision.\r\nDe ses trois épouses, la première, nymphomane, se suicidera. Il abandonnera la deuxième le jour même de leur mariage. Quant à la troisième, elle le quittera au bout de trente-six ans.\r\nAccusé du meurtre d'un de ses copains, Barney finira solitaire et poivrot, laissant cette autobiographie.\r\nDrôle d'histoire ? Oui. Ecrite d'une plume virtuose, avec un humour et un souffle ahurissants. Et l'un des plus grands romans du Canada anglophone d'aujourd'hui.",
+        "genres": [
+            "Roman"
+        ],
+        "rating": 8.1,
+        "rating_count": 18,
+        "image_url": "https://media.senscritique.com/media/000000157603/300/le_monde_de_barney.jpg",
+        "publication_date": "2010-09-23T22:00:00.000Z"
+    },
+    {
+        "title": "Ma Mercedes est plus grosse que la tienne",
+        "author": [
+            "Nkem Nwankwo"
+        ],
+        "isbn": "9782842610456",
+        "description": "",
+        "genres": [
+            "Roman"
+        ],
+        "rating": 6.6,
+        "rating_count": 12,
+        "image_url": "https://media.senscritique.com/media/000000111488/300/ma_mercedes_est_plus_grosse_que_la_tienne.jpg",
+        "publication_date": "2011-04-02T22:00:00.000Z"
+    },
+    {
+        "title": "Les Guerriers de l'hiver",
+        "author": [
+            "Olivier Norek"
+        ],
+        "isbn": "9782749947204",
+        "description": "« Je suis certain que nous avons réveillé leur satané Sisu.\r\n– Je ne parle pas leur langue, camarade.\r\n– Et je ne pourrais te traduire ce mot, car il n’a d’équivalent nulle part ailleurs. Le Sisu est l’âme de la Finlande. Il dit le courage, la force intérieure, la ténacité, la résistance, la détermination…\r\nUne vie austère, dans un environnement hostile, a forgé leur mental d’un acier qui nous résiste aujourd’hui. »\r\nImaginez un pays minuscule.\r\nImaginez-en un autre, gigantesque.\r\nImaginez maintenant qu’ils s’affrontent.\r\nAu cœur du plus mordant de ses hivers, au cœur de la guerre la plus meurtrière de son histoire, un peuple se dresse contre l’ennemi, et parmi ses soldats naît une légende.\r\nLa légende de Simo, la Mort Blanche.",
+        "genres": [
+            "Roman"
+        ],
+        "rating": 7.6,
+        "rating_count": 106,
+        "image_url": "https://media.senscritique.com/media/000022304843/300/les_guerriers_de_l_hiver.webp",
+        "publication_date": null
+    },
+    {
+        "title": "Je n'ai pas de bouche et il faut que je crie",
+        "author": [
+            "Harlan Ellison"
+        ],
+        "isbn": "9781497609617",
+        "description": "Contient les nouvelles: \r\n- I Have No Mouth and I Must Scream \r\n- Big Sam Was My Friend\r\n- Eyes of Dust\r\n- World of the Myth\r\n- Lonelyache\r\n- Delusion for a Dragon Slayer\r\n- Pretty Maggie Moneyeyes.",
+        "genres": [
+            "Recueil de nouvelles"
+        ],
+        "rating": 7.7,
+        "rating_count": 203,
+        "image_url": "https://media.senscritique.com/media/000006755712/300/je_n_ai_pas_de_bouche_et_il_faut_que_je_crie.jpg",
+        "publication_date": "2011-01-05T23:00:00.000Z"
+    },
+    {
+        "title": "1984",
+        "author": [
+            "George Orwell"
+        ],
+        "isbn": "9782070368228",
+        "description": "De tous les carrefours importants, le visage à la moustache noire vous fixait du regard. Il y en a un sur le mur d'en face. Big brother vous regarde.",
+        "genres": [
+            "Roman",
+            "Science-fiction"
+        ],
+        "rating": 8.3,
+        "rating_count": 90515,
+        "image_url": "https://media.senscritique.com/media/000004731893/300/1984.jpg",
+        "publication_date": "2014-07-31T00:06:04.000Z"
+    },
+    {
+        "title": "La Mort immortelle",
+        "author": [
+            "Liu Cixin"
+        ],
+        "isbn": "9781466853454",
+        "description": "Un demi-siècle après l’Ultime Bataille, l’équilibre précaire dû à la dissuasion de la forêt sombre continue de maintenir les envahisseurs trisolariens à distance. La Terre jouit d’une prospérité sans précédent due au transfert des connaissances et des technologies trisolariennes. La science humaine connaît des progrès pour ainsi dire quotidiens, les Trisolariens découvrent avec fascination la culture humaine et l’espoir grandit que les deux civilisations puissent bientôt coexister pacifiquement sans la terrible menace d’une annihilation réciproque. Mais lorsqu’une ingénieure en aéronautique originaire du début du XXIe siècle sort de son hibernation, elle réveille avec elle le souvenir d’un programme qui menace cet équilibre. Bientôt, l’humanité aura à faire un choix : partir à la conquête d’autres univers ou mourir dans son berceau. Après Le Problème à trois corps et La Forêt sombre, Liu Cixin referme l’un des cycles de science-fiction les plus ambitieux de ce siècle.",
+        "genres": [
+            "Roman",
+            "Science-fiction"
+        ],
+        "rating": 8,
+        "rating_count": 795,
+        "image_url": "https://media.senscritique.com/media/000018054969/300/la_mort_immortelle.jpg",
+        "publication_date": "2015-05-27T14:36:01.000Z"
+    },
+    {
+        "title": "La Forêt sombre",
+        "author": [
+            "Liu Cixin"
+        ],
+        "isbn": "9782330082314",
+        "description": "L'humanité le sait désormais : dans un peu plus de quatre siècles, la flotte trisolarienne envahira le système solaire. La Terre doit impérativement préparer la parade, mais tout progrès dans les sciences fondamentales est entravé par les intellectrons. Grâce à ces derniers, les Trisolariens peuvent espionner toutes les conversations et tous les ordinateurs, en revanche ils sont incapables de lire dans l'âme humaine. Parallèlement aux programmes de défense classiques visant à lever des armées spatiales nationales, le Conseil de défense planétaire imagine donc un nouveau projet : le programme Colmateur. Quatre individus seront chargés d'élaborer chacun de leur côté des stratégies pour contrer l'invasion ennemie, sans en révéler la nature. Ils auront à leur disposition un budget presque illimité et pourront agir comme bon leur semble, sans avoir besoin de se justifier. Livrés à eux-mêmes, ils devront penser seuls, et brouiller les pistes. Trois des hommes désignés sont des personnalités politiques de premier plan et des scientifiques éminents, mais le quatrième est un parfait anonyme. Astronome et professeur de sociologie sans envergure, le Chinois Luo Ji ignore totalement la raison pour laquelle on lui confie cette mission. Tout ce qu'il sait, c'est qu'il est désormais l'un des Colmateurs, et que les Trisolariens veulent sa mort. Après Le Problème à trois corps, Liu Cixin revient avec une suite haletante et magistrale.",
+        "genres": [
+            "Science-fiction",
+            "Roman"
+        ],
+        "rating": 8,
+        "rating_count": 1053,
+        "image_url": "https://media.senscritique.com/media/000017316314/300/la_foret_sombre.jpg",
+        "publication_date": "2017-10-10T12:56:20.000Z"
+    },
+    {
+        "title": "Contes et récits des arts martiaux de Chine et du Japon",
+        "author": [
+            "Michel Random",
+            "Pascal Fauliot"
+        ],
+        "isbn": "9782226021205",
+        "description": "Un héritage millénaire de textes tournant autour des arts martiaux s'est vu réuni dans un livre par Pascal Fauliot et préfacé par Michel Random.",
+        "genres": [
+            "Conte",
+            "Récit"
+        ],
+        "rating": 7.1,
+        "rating_count": 14,
+        "image_url": "https://media.senscritique.com/media/000006157180/300/Contes_et_recits_des_arts_martiaux_de_Chine_et_du_Japon.jpg",
+        "publication_date": "2014-01-08T16:24:12.000Z"
+    },
+    {
+        "title": "L'Assassin du roi",
+        "author": [
+            "Robin Hobb (Megan Lindholm)"
+        ],
+        "isbn": "9782857045670",
+        "description": "Fitz, le bâtard royal, a survécu à sa première mission meurtrière, mais son contact avec la mort lui a laissé d’inaltérables séquelles. Revenu à Castelcerf, il retrouve celle qu’il a aimée, mais ne peut lui déclarer sa flamme sous peine de la condamner irrémédiablement. Car autour de lui, la cour fourmille d’intrigue, les menaces se resserrent, la mort rôde. Il a pourtant quelques alliés dans la place : un prince qui lui fait découvrir les mystères d’une magie toute puissante, un maître assassin qui lui veut malgré tout du bien, et un loup, avec qui il partage un lien étrange et périlleux...",
+        "genres": [
+            "Roman",
+            "Fantasy"
+        ],
+        "rating": 7.8,
+        "rating_count": 3987,
+        "image_url": "https://media.senscritique.com/media/000017570982/300/l_assassin_du_roi_l_assassin_royal_tome_2.jpg",
+        "publication_date": "2009-04-15T22:00:00.000Z"
+    },
+    {
+        "title": "1Q84 : Livre 1",
+        "author": [
+            "Haruki Murakami"
+        ],
+        "isbn": "9782714447074",
+        "description": "Au Japon, en 1984. \r\nC'est l'histoire de deux mondes, celui réel de 1984 et un monde parallèle tout aussi vivant, celui de 1Q84. Deux mondes imbriqués dans lesquels évoluent, en alternance, Aomamé et Tengo, 29 ans tous deux, qui ont fréquenté la même école lorsqu'ils avaient dix ans. A l'époque, les autres enfants se moquaient d'Aomamé à cause de son prénom, « Haricot de soja », et de l'appartenance de ses parents à la nouvelle religion des Témoins. Un jour, Tengo l'a défendue et Aomamé lui a serré la main. Un pacte secret conclu entre deux enfants, le signe d'un amour pur dont ils auront toujours la nostalgie. \r\nEn 1984, chacun mène sa vie, ses amours, ses activités. \r\nTueuse professionnelle, Aomamé se croit investie d'une mission : exécuter les hommes qui ont fait violence aux femmes. Aomamé a aussi une particularité : la faculté innée de retenir quantité de faits, d'événements, de dates en rapport avec l'Histoire. \r\nTengo est un génie des maths, apprenti-écrivain et nègre pour un éditeur qui lui demande de réécrire l'autobiographie d'une jeune fille échappé de la secte des Précurseurs. Il est aussi régulièrement pris de malaises lors desquels il revoit une scène dont il a été témoin à l'âge d'un an et demi. \r\nLes deux jeunes gens sont destinés à se retrouver mais où ? Quand ? En 1984 ? Dans 1Q84 ? Dans cette vie ? Dans la mort ?",
+        "genres": [
+            "Roman",
+            "Fantastique"
+        ],
+        "rating": 7.1,
+        "rating_count": 3635,
+        "image_url": "https://media.senscritique.com/media/000019455020/300/1q84_livre_1.jpg",
+        "publication_date": "2010-03-13T23:00:00.000Z"
+    },
+    {
+        "title": "La Métamorphose",
+        "author": [
+            "Franz Kafka"
+        ],
+        "isbn": "9782070414376",
+        "description": "Un matin Gregor s'aperçoit qu'il a une carapace de coléoptère. Il croit d'abord à un mauvais rêve, mais la métamorphose est bien réelle.",
+        "genres": [
+            "Nouvelle"
+        ],
+        "rating": 7.5,
+        "rating_count": 17818,
+        "image_url": "https://media.senscritique.com/media/000007433233/300/la_metamorphose.jpg",
+        "publication_date": "2014-07-30T14:46:06.000Z"
+    },
+    {
+        "title": "Ainsi parlait Zarathoustra",
+        "author": [
+            "Friedrich Nietzsche"
+        ],
+        "isbn": "9782253006756",
+        "description": "Ainsi parlait Zarathoustra est une œuvre philosophique magistrale. Elle a bouleversé la pensée de l'Occident. « Nietzsche démolit, il sape », disait Gide. Il remet définitivement l'homme en question. Poète-prophète, Zarathoustra se retire dans la montagne et revient parmi les hommes pour leur parler. Sa leçon essentielle : « Vouloir libère. » Son leitmotiv : rejeter ce qui n'est pas voulu, conquis comme tel, tout ce qui est subi. C'est le sens du fameux : « Deviens celui que tu es. » La vertu est souvent le droit du plus faible, elle paralyse tout, désir, création et joie. Le surhomme nietzschéen est celui qui a la plus grande diversité d'instincts qui s'opposent puissamment mais qu'il maîtrise.",
+        "genres": [
+            "Essai",
+            "Philosophie",
+            "Poésie"
+        ],
+        "rating": 8,
+        "rating_count": 4273,
+        "image_url": "https://media.senscritique.com/media/000004354994/300/ainsi_parlait_zarathoustra.jpg",
+        "publication_date": "2014-07-31T02:42:03.000Z"
+    },
+    {
+        "title": "Candide ou l'Optimisme",
+        "author": [
+            "Voltaire"
+        ],
+        "isbn": "9782290038598",
+        "description": "Candide était amoureux de Cunégonde, fille du baron. Il surprend les amoureux et chasse Candide. Son existence ne sera plus qu’une suite de malheurs.",
+        "genres": [
+            "Conte",
+            "Roman",
+            "Philosophie"
+        ],
+        "rating": 6.9,
+        "rating_count": 34702,
+        "image_url": "https://media.senscritique.com/media/000018310069/300/candide_ou_l_optimisme.jpg",
+        "publication_date": "2014-07-31T00:50:03.000Z"
+    },
+    {
+        "title": "Gagner la guerre",
+        "author": [
+            "Jean-Philippe Jaworski"
+        ],
+        "isbn": "9782070437412",
+        "description": "Don Benvenuto est au service du Podestat de la République mais est toujours très habile pour se fourrer dans les pires situations qui soient.",
+        "genres": [
+            "Roman",
+            "Fantasy"
+        ],
+        "rating": 8.4,
+        "rating_count": 3857,
+        "image_url": "https://media.senscritique.com/media/000017840343/300/gagner_la_guerre.jpg",
+        "publication_date": "2009-04-23T22:00:00.000Z"
+    },
+    {
+        "title": "Hypérion",
+        "author": [
+            "Dan Simmons"
+        ],
+        "isbn": null,
+        "description": "Hypérion, le port spatial, offre un spectacle de fin du monde. Des millions d'habitants de la planète sont sûrs que le gritche va venir les prendre.",
+        "genres": [
+            "Roman",
+            "Science-fiction"
+        ],
+        "rating": 8,
+        "rating_count": 4997,
+        "image_url": "https://media.senscritique.com/media/000007607303/300/hyperion.jpg",
+        "publication_date": "2014-07-30T20:42:05.000Z"
+    },
+    {
+        "title": "Les Misérables",
+        "author": [
+            "Victor Hugo"
+        ],
+        "isbn": "9782035834256",
+        "description": "Cosette et Marius sont deux âmes disposées à s'aimer. Mais Jean Valjean veille, lui, l'ancien bagnard dont Cosette est devenue la seule raison de vivre.",
+        "genres": [
+            "Roman"
+        ],
+        "rating": 8,
+        "rating_count": 13047,
+        "image_url": "https://media.senscritique.com/media/000020245094/300/les_miserables.jpg",
+        "publication_date": "2014-07-30T23:49:04.000Z"
+    },
+    {
         "title": "Fondation - Le Cycle de Fondation, tome 1",
         "author": [
             "Isaac Asimov"
@@ -1276,6 +977,305 @@
         "rating": 8.1,
         "rating_count": 11456,
         "image_url": "https://media.senscritique.com/media/000016623850/300/fondation_le_cycle_de_fondation_tome_1.png",
+        "publication_date": "2014-07-31T06:35:04.000Z"
+    },
+    {
+        "title": "Les Fleurs du mal",
+        "author": [
+            "Charles Baudelaire"
+        ],
+        "isbn": "9782081204676",
+        "description": "Une oeuvre sous forme de recueil de poèmes divisé en six parties : Spleen et idéal, Tableaux parisiens, le Vin, les Fleurs du mal, Révolte et la Mort.",
+        "genres": [
+            "Poésie"
+        ],
+        "rating": 8.2,
+        "rating_count": 47142,
+        "image_url": "https://media.senscritique.com/media/000006655127/300/les_fleurs_du_mal.jpg",
+        "publication_date": "2014-07-31T06:35:04.000Z"
+    },
+    {
+        "title": "Le Monde de Barney",
+        "author": [
+            "Mordecai Richler"
+        ],
+        "isbn": "9782253149958",
+        "description": "Drôle de vie que celle de Barney !\r\nBarney Panofsky, juif canadien, expatrié dans les années cinquante à Paris, où il a côtoyé la bohème artistique. De retour au pays, il devient importateur de fromages français, puis producteur de télévision.\r\nDe ses trois épouses, la première, nymphomane, se suicidera. Il abandonnera la deuxième le jour même de leur mariage. Quant à la troisième, elle le quittera au bout de trente-six ans.\r\nAccusé du meurtre d'un de ses copains, Barney finira solitaire et poivrot, laissant cette autobiographie.\r\nDrôle d'histoire ? Oui. Ecrite d'une plume virtuose, avec un humour et un souffle ahurissants. Et l'un des plus grands romans du Canada anglophone d'aujourd'hui.",
+        "genres": [
+            "Roman"
+        ],
+        "rating": 8.1,
+        "rating_count": 18,
+        "image_url": "https://media.senscritique.com/media/000000157603/300/le_monde_de_barney.jpg",
+        "publication_date": "2010-09-23T22:00:00.000Z"
+    },
+    {
+        "title": "Ma Mercedes est plus grosse que la tienne",
+        "author": [
+            "Nkem Nwankwo"
+        ],
+        "isbn": "9782842610456",
+        "description": "",
+        "genres": [
+            "Roman"
+        ],
+        "rating": 6.6,
+        "rating_count": 12,
+        "image_url": "https://media.senscritique.com/media/000000111488/300/ma_mercedes_est_plus_grosse_que_la_tienne.jpg",
+        "publication_date": "2011-04-02T22:00:00.000Z"
+    },
+    {
+        "title": "Les Guerriers de l'hiver",
+        "author": [
+            "Olivier Norek"
+        ],
+        "isbn": "9782749947204",
+        "description": "« Je suis certain que nous avons réveillé leur satané Sisu.\r\n– Je ne parle pas leur langue, camarade.\r\n– Et je ne pourrais te traduire ce mot, car il n’a d’équivalent nulle part ailleurs. Le Sisu est l’âme de la Finlande. Il dit le courage, la force intérieure, la ténacité, la résistance, la détermination…\r\nUne vie austère, dans un environnement hostile, a forgé leur mental d’un acier qui nous résiste aujourd’hui. »\r\nImaginez un pays minuscule.\r\nImaginez-en un autre, gigantesque.\r\nImaginez maintenant qu’ils s’affrontent.\r\nAu cœur du plus mordant de ses hivers, au cœur de la guerre la plus meurtrière de son histoire, un peuple se dresse contre l’ennemi, et parmi ses soldats naît une légende.\r\nLa légende de Simo, la Mort Blanche.",
+        "genres": [
+            "Roman"
+        ],
+        "rating": 7.6,
+        "rating_count": 106,
+        "image_url": "https://media.senscritique.com/media/000022304843/300/les_guerriers_de_l_hiver.webp",
+        "publication_date": null
+    },
+    {
+        "title": "Je n'ai pas de bouche et il faut que je crie",
+        "author": [
+            "Harlan Ellison"
+        ],
+        "isbn": "9781497609617",
+        "description": "Contient les nouvelles: \r\n- I Have No Mouth and I Must Scream \r\n- Big Sam Was My Friend\r\n- Eyes of Dust\r\n- World of the Myth\r\n- Lonelyache\r\n- Delusion for a Dragon Slayer\r\n- Pretty Maggie Moneyeyes.",
+        "genres": [
+            "Recueil de nouvelles"
+        ],
+        "rating": 7.7,
+        "rating_count": 203,
+        "image_url": "https://media.senscritique.com/media/000006755712/300/je_n_ai_pas_de_bouche_et_il_faut_que_je_crie.jpg",
+        "publication_date": "2011-01-05T23:00:00.000Z"
+    },
+    {
+        "title": "1984",
+        "author": [
+            "George Orwell"
+        ],
+        "isbn": "9782070368228",
+        "description": "De tous les carrefours importants, le visage à la moustache noire vous fixait du regard. Il y en a un sur le mur d'en face. Big brother vous regarde.",
+        "genres": [
+            "Roman",
+            "Science-fiction"
+        ],
+        "rating": 8.3,
+        "rating_count": 90515,
+        "image_url": "https://media.senscritique.com/media/000004731893/300/1984.jpg",
+        "publication_date": "2014-07-31T00:06:04.000Z"
+    },
+    {
+        "title": "La Mort immortelle",
+        "author": [
+            "Liu Cixin"
+        ],
+        "isbn": "9781466853454",
+        "description": "Un demi-siècle après l’Ultime Bataille, l’équilibre précaire dû à la dissuasion de la forêt sombre continue de maintenir les envahisseurs trisolariens à distance. La Terre jouit d’une prospérité sans précédent due au transfert des connaissances et des technologies trisolariennes. La science humaine connaît des progrès pour ainsi dire quotidiens, les Trisolariens découvrent avec fascination la culture humaine et l’espoir grandit que les deux civilisations puissent bientôt coexister pacifiquement sans la terrible menace d’une annihilation réciproque. Mais lorsqu’une ingénieure en aéronautique originaire du début du XXIe siècle sort de son hibernation, elle réveille avec elle le souvenir d’un programme qui menace cet équilibre. Bientôt, l’humanité aura à faire un choix : partir à la conquête d’autres univers ou mourir dans son berceau. Après Le Problème à trois corps et La Forêt sombre, Liu Cixin referme l’un des cycles de science-fiction les plus ambitieux de ce siècle.",
+        "genres": [
+            "Roman",
+            "Science-fiction"
+        ],
+        "rating": 8,
+        "rating_count": 795,
+        "image_url": "https://media.senscritique.com/media/000018054969/300/la_mort_immortelle.jpg",
+        "publication_date": "2015-05-27T14:36:01.000Z"
+    },
+    {
+        "title": "La Forêt sombre",
+        "author": [
+            "Liu Cixin"
+        ],
+        "isbn": "9782330082314",
+        "description": "L'humanité le sait désormais : dans un peu plus de quatre siècles, la flotte trisolarienne envahira le système solaire. La Terre doit impérativement préparer la parade, mais tout progrès dans les sciences fondamentales est entravé par les intellectrons. Grâce à ces derniers, les Trisolariens peuvent espionner toutes les conversations et tous les ordinateurs, en revanche ils sont incapables de lire dans l'âme humaine. Parallèlement aux programmes de défense classiques visant à lever des armées spatiales nationales, le Conseil de défense planétaire imagine donc un nouveau projet : le programme Colmateur. Quatre individus seront chargés d'élaborer chacun de leur côté des stratégies pour contrer l'invasion ennemie, sans en révéler la nature. Ils auront à leur disposition un budget presque illimité et pourront agir comme bon leur semble, sans avoir besoin de se justifier. Livrés à eux-mêmes, ils devront penser seuls, et brouiller les pistes. Trois des hommes désignés sont des personnalités politiques de premier plan et des scientifiques éminents, mais le quatrième est un parfait anonyme. Astronome et professeur de sociologie sans envergure, le Chinois Luo Ji ignore totalement la raison pour laquelle on lui confie cette mission. Tout ce qu'il sait, c'est qu'il est désormais l'un des Colmateurs, et que les Trisolariens veulent sa mort. Après Le Problème à trois corps, Liu Cixin revient avec une suite haletante et magistrale.",
+        "genres": [
+            "Science-fiction",
+            "Roman"
+        ],
+        "rating": 8,
+        "rating_count": 1053,
+        "image_url": "https://media.senscritique.com/media/000017316314/300/la_foret_sombre.jpg",
+        "publication_date": "2017-10-10T12:56:20.000Z"
+    },
+    {
+        "title": "Contes et récits des arts martiaux de Chine et du Japon",
+        "author": [
+            "Michel Random",
+            "Pascal Fauliot"
+        ],
+        "isbn": "9782226021205",
+        "description": "Un héritage millénaire de textes tournant autour des arts martiaux s'est vu réuni dans un livre par Pascal Fauliot et préfacé par Michel Random.",
+        "genres": [
+            "Conte",
+            "Récit"
+        ],
+        "rating": 7.1,
+        "rating_count": 14,
+        "image_url": "https://media.senscritique.com/media/000006157180/300/Contes_et_recits_des_arts_martiaux_de_Chine_et_du_Japon.jpg",
+        "publication_date": "2014-01-08T16:24:12.000Z"
+    },
+    {
+        "title": "L'Assassin du roi",
+        "author": [
+            "Robin Hobb (Megan Lindholm)"
+        ],
+        "isbn": "9782857045670",
+        "description": "Fitz, le bâtard royal, a survécu à sa première mission meurtrière, mais son contact avec la mort lui a laissé d’inaltérables séquelles. Revenu à Castelcerf, il retrouve celle qu’il a aimée, mais ne peut lui déclarer sa flamme sous peine de la condamner irrémédiablement. Car autour de lui, la cour fourmille d’intrigue, les menaces se resserrent, la mort rôde. Il a pourtant quelques alliés dans la place : un prince qui lui fait découvrir les mystères d’une magie toute puissante, un maître assassin qui lui veut malgré tout du bien, et un loup, avec qui il partage un lien étrange et périlleux...",
+        "genres": [
+            "Roman",
+            "Fantasy"
+        ],
+        "rating": 7.8,
+        "rating_count": 3987,
+        "image_url": "https://media.senscritique.com/media/000017570982/300/l_assassin_du_roi_l_assassin_royal_tome_2.jpg",
+        "publication_date": "2009-04-15T22:00:00.000Z"
+    },
+    {
+        "title": "1Q84 : Livre 1",
+        "author": [
+            "Haruki Murakami"
+        ],
+        "isbn": "9782714447074",
+        "description": "Au Japon, en 1984. \r\nC'est l'histoire de deux mondes, celui réel de 1984 et un monde parallèle tout aussi vivant, celui de 1Q84. Deux mondes imbriqués dans lesquels évoluent, en alternance, Aomamé et Tengo, 29 ans tous deux, qui ont fréquenté la même école lorsqu'ils avaient dix ans. A l'époque, les autres enfants se moquaient d'Aomamé à cause de son prénom, « Haricot de soja », et de l'appartenance de ses parents à la nouvelle religion des Témoins. Un jour, Tengo l'a défendue et Aomamé lui a serré la main. Un pacte secret conclu entre deux enfants, le signe d'un amour pur dont ils auront toujours la nostalgie. \r\nEn 1984, chacun mène sa vie, ses amours, ses activités. \r\nTueuse professionnelle, Aomamé se croit investie d'une mission : exécuter les hommes qui ont fait violence aux femmes. Aomamé a aussi une particularité : la faculté innée de retenir quantité de faits, d'événements, de dates en rapport avec l'Histoire. \r\nTengo est un génie des maths, apprenti-écrivain et nègre pour un éditeur qui lui demande de réécrire l'autobiographie d'une jeune fille échappé de la secte des Précurseurs. Il est aussi régulièrement pris de malaises lors desquels il revoit une scène dont il a été témoin à l'âge d'un an et demi. \r\nLes deux jeunes gens sont destinés à se retrouver mais où ? Quand ? En 1984 ? Dans 1Q84 ? Dans cette vie ? Dans la mort ?",
+        "genres": [
+            "Roman",
+            "Fantastique"
+        ],
+        "rating": 7.1,
+        "rating_count": 3635,
+        "image_url": "https://media.senscritique.com/media/000019455020/300/1q84_livre_1.jpg",
+        "publication_date": "2010-03-13T23:00:00.000Z"
+    },
+    {
+        "title": "La Métamorphose",
+        "author": [
+            "Franz Kafka"
+        ],
+        "isbn": "9782070414376",
+        "description": "Un matin Gregor s'aperçoit qu'il a une carapace de coléoptère. Il croit d'abord à un mauvais rêve, mais la métamorphose est bien réelle.",
+        "genres": [
+            "Nouvelle"
+        ],
+        "rating": 7.5,
+        "rating_count": 17818,
+        "image_url": "https://media.senscritique.com/media/000007433233/300/la_metamorphose.jpg",
+        "publication_date": "2014-07-30T14:46:06.000Z"
+    },
+    {
+        "title": "Ainsi parlait Zarathoustra",
+        "author": [
+            "Friedrich Nietzsche"
+        ],
+        "isbn": "9782253006756",
+        "description": "Ainsi parlait Zarathoustra est une œuvre philosophique magistrale. Elle a bouleversé la pensée de l'Occident. « Nietzsche démolit, il sape », disait Gide. Il remet définitivement l'homme en question. Poète-prophète, Zarathoustra se retire dans la montagne et revient parmi les hommes pour leur parler. Sa leçon essentielle : « Vouloir libère. » Son leitmotiv : rejeter ce qui n'est pas voulu, conquis comme tel, tout ce qui est subi. C'est le sens du fameux : « Deviens celui que tu es. » La vertu est souvent le droit du plus faible, elle paralyse tout, désir, création et joie. Le surhomme nietzschéen est celui qui a la plus grande diversité d'instincts qui s'opposent puissamment mais qu'il maîtrise.",
+        "genres": [
+            "Essai",
+            "Philosophie",
+            "Poésie"
+        ],
+        "rating": 8,
+        "rating_count": 4273,
+        "image_url": "https://media.senscritique.com/media/000004354994/300/ainsi_parlait_zarathoustra.jpg",
+        "publication_date": "2014-07-31T02:42:03.000Z"
+    },
+    {
+        "title": "Candide ou l'Optimisme",
+        "author": [
+            "Voltaire"
+        ],
+        "isbn": "9782290038598",
+        "description": "Candide était amoureux de Cunégonde, fille du baron. Il surprend les amoureux et chasse Candide. Son existence ne sera plus qu’une suite de malheurs.",
+        "genres": [
+            "Conte",
+            "Roman",
+            "Philosophie"
+        ],
+        "rating": 6.9,
+        "rating_count": 34702,
+        "image_url": "https://media.senscritique.com/media/000018310069/300/candide_ou_l_optimisme.jpg",
+        "publication_date": "2014-07-31T00:50:03.000Z"
+    },
+    {
+        "title": "Gagner la guerre",
+        "author": [
+            "Jean-Philippe Jaworski"
+        ],
+        "isbn": "9782070437412",
+        "description": "Don Benvenuto est au service du Podestat de la République mais est toujours très habile pour se fourrer dans les pires situations qui soient.",
+        "genres": [
+            "Roman",
+            "Fantasy"
+        ],
+        "rating": 8.4,
+        "rating_count": 3857,
+        "image_url": "https://media.senscritique.com/media/000017840343/300/gagner_la_guerre.jpg",
+        "publication_date": "2009-04-23T22:00:00.000Z"
+    },
+    {
+        "title": "Hypérion",
+        "author": [
+            "Dan Simmons"
+        ],
+        "isbn": null,
+        "description": "Hypérion, le port spatial, offre un spectacle de fin du monde. Des millions d'habitants de la planète sont sûrs que le gritche va venir les prendre.",
+        "genres": [
+            "Roman",
+            "Science-fiction"
+        ],
+        "rating": 8,
+        "rating_count": 4997,
+        "image_url": "https://media.senscritique.com/media/000007607303/300/hyperion.jpg",
+        "publication_date": "2014-07-30T20:42:05.000Z"
+    },
+    {
+        "title": "Les Misérables",
+        "author": [
+            "Victor Hugo"
+        ],
+        "isbn": "9782035834256",
+        "description": "Cosette et Marius sont deux âmes disposées à s'aimer. Mais Jean Valjean veille, lui, l'ancien bagnard dont Cosette est devenue la seule raison de vivre.",
+        "genres": [
+            "Roman"
+        ],
+        "rating": 8,
+        "rating_count": 13047,
+        "image_url": "https://media.senscritique.com/media/000020245094/300/les_miserables.jpg",
+        "publication_date": "2014-07-30T23:49:04.000Z"
+    },
+    {
+        "title": "Fondation - Le Cycle de Fondation, tome 1",
+        "author": [
+            "Isaac Asimov"
+        ],
+        "isbn": "9782070415700",
+        "description": "Une ère de ténèbres de 30 000 ans est prévue. Avec la Fondation, chargée de rassembler toutes les connaissances humaines, on peut la réduire.",
+        "genres": [
+            "Science-fiction",
+            "Roman"
+        ],
+        "rating": 8.1,
+        "rating_count": 11456,
+        "image_url": "https://media.senscritique.com/media/000016623850/300/fondation_le_cycle_de_fondation_tome_1.png",
+        "publication_date": "2014-07-31T06:35:04.000Z"
+    },
+    {
+        "title": "Les Fleurs du mal",
+        "author": [
+            "Charles Baudelaire"
+        ],
+        "isbn": "9782081204676",
+        "description": "Une oeuvre sous forme de recueil de poèmes divisé en six parties : Spleen et idéal, Tableaux parisiens, le Vin, les Fleurs du mal, Révolte et la Mort.",
+        "genres": [
+            "Poésie"
+        ],
+        "rating": 8.2,
+        "rating_count": 47142,
+        "image_url": "https://media.senscritique.com/media/000006655127/300/les_fleurs_du_mal.jpg",
         "publication_date": "2014-07-31T06:35:04.000Z"
     },
     {

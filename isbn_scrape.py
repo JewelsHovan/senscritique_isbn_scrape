@@ -24,6 +24,8 @@ import json
 import aiohttp
 import asyncio
 from asyncio import Semaphore
+from tqdm.asyncio import tqdm
+from tqdm import tqdm as sync_tqdm
 from config import BASE_URL, NUM_WORKERS, DELAY_TIME
 
 async def get_num_pages(base_url, headers, session):
@@ -38,18 +40,26 @@ async def get_num_pages(base_url, headers, session):
     Returns:
         int or None: The total number of pages, or None if an error occurs.
     """
+    # Send a GET request to the base URL with specified headers
     async with session.get(base_url, headers=headers) as response:
-        content = await response.text()
-        soup = BeautifulSoup(content, 'html.parser')
-        nav = soup.find('nav', {'aria-label': 'Navigation de la pagination'})
-        if nav:
-            last_span = nav.find_all('span')[-1] # Get the last span in the list
-            number_str = last_span.text
-            try:
-                number = int(number_str)
-                return number
-            except ValueError:
-                print("Could not convert to integer")
+        # Check if the request was successful
+        if response.status == 200:
+            # Parse the HTML content of the page
+            content = await response.text()
+            soup = BeautifulSoup(content, 'html.parser')
+            # Find the navigation element for pagination
+            nav = soup.find('nav', {'aria-label': 'Navigation de la pagination'})
+            if nav:
+                # Get the last span in the list
+                last_span = nav.find_all('span')[-1]
+                # Extract the number from the text of the last span
+                number_str = last_span.text
+                try:
+                    # Convert the number string to an integer
+                    number = int(number_str)
+                    return number
+                except ValueError:
+                    print("Could not convert to integer")
         return None
 
 async def scrape_book_urls(base_url, page_end, headers, session, semaphore):
@@ -57,43 +67,62 @@ async def scrape_book_urls(base_url, page_end, headers, session, semaphore):
     Asynchronously scrapes book URLs from multiple pages of a SensCritique collection.
 
     Args:
-        base_url (str): The base URL of the collection.
+        base_url (str): The base URL for the SensCritique collection.
         page_end (int): The last page number to scrape.
-        headers (dict): HTTP headers for the requests.
+        headers (dict): HTTP headers for the request.
         session (aiohttp.ClientSession): The aiohttp client session.
         semaphore (asyncio.Semaphore): Semaphore to limit concurrent requests.
 
     Returns:
-        list: A list of URLs pointing to individual book pages.
+        list: A list of URLs to individual book pages.
     """
     all_book_urls = []
-    page_number = 1
     
-    while page_number <= page_end:
-        async with semaphore:  # Limit concurrent requests
-            await asyncio.sleep(0.2)  # Respectful delay
-            url = f"{base_url}?page={page_number}"
-            async with session.get(url, headers=headers) as response:
-                if response.status == 200:
-                    content = await response.text()
-                    soup = BeautifulSoup(content, 'html.parser')
-                    book_elements = soup.find_all('div', {'data-testid': 'product-list-item'})
+    # Initialize a progress bar to track the scraping of pages
+    with sync_tqdm(total=page_end, desc="Scraping pages", unit="page") as pbar:
+        page_number = 1
+        # Loop through each page number up to the last page
+        while page_number <= page_end:
+            # Use a semaphore to limit the number of concurrent requests
+            async with semaphore:
+                # Introduce a small delay to avoid overwhelming the server
+                await asyncio.sleep(0.2)
+                # Construct the URL for the current page
+                url = f"{base_url}?page={page_number}"
+                # Send a GET request to the URL with specified headers
+                async with session.get(url, headers=headers) as response:
+                    # Check if the request was successful
+                    if response.status == 200:
+                        # Parse the HTML content of the page
+                        content = await response.text()
+                        soup = BeautifulSoup(content, 'html.parser')
+                        # Find all book elements on the page
+                        book_elements = soup.find_all('div', {'data-testid': 'product-list-item'})
 
-                    if not book_elements:  # No more books found, exit loop
+                        # If no book elements are found, exit the loop
+                        if not book_elements:
+                            break
+
+                        # Iterate through each book element
+                        for book_element in book_elements:
+                            # Find the title element of the book
+                            title_element = book_element.find('a', {'data-testid': 'product-title'})
+                            # If a title element is found
+                            if title_element:
+                                # Construct the full URL to the book's page
+                                book_url = "https://www.senscritique.com" + title_element['href']
+                                # Add the book URL to the list of all book URLs
+                                all_book_urls.append(book_url)
+                    else:
+                        # Print an error message if the page could not be fetched
+                        print(f"\nError fetching page {page_number}: Status code {response.status}")
                         break
-
-                    # we iterate through the book elements and extract the book url
-                    for book_element in book_elements:
-                        title_element = book_element.find('a', {'data-testid': 'product-title'})
-                        if title_element:
-                            # we construct the book url by adding the href to the base url
-                            book_url = "https://www.senscritique.com" + title_element['href']
-                            all_book_urls.append(book_url)
-                else:
-                    print(f"Error fetching page {page_number}: Status code {response.status}")
-                    break
-        page_number += 1
+            # Update the progress bar after each page is processed
+            pbar.update(1)
+            # Increment the page number to move to the next page
+            page_number += 1
     
+    # Return the list of all scraped book URLs
     return all_book_urls
 
 async def scrape_book_details(book_url, headers, session, semaphore):
@@ -136,10 +165,7 @@ async def scrape_book_details(book_url, headers, session, semaphore):
 
 async def main():
     """
-    Main asynchronous function to orchestrate the scraping process.
-    
-    This function initializes the aiohttp session, determines the number of pages to scrape,
-    fetches book URLs, concurrently scrapes book details, and saves the data to a JSON file.
+    Main asynchronous function with enhanced progress tracking.
     """
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36'
@@ -147,36 +173,40 @@ async def main():
     base_url = BASE_URL
     
     # Create semaphore for concurrent workers
-    semaphore = Semaphore(NUM_WORKERS)  # Limit to NUM_WORKERS concurrent requests
+    semaphore = Semaphore(NUM_WORKERS)
     
     async with aiohttp.ClientSession() as session:
         # Get number of pages
         num_pages = await get_num_pages(base_url, headers, session)
-        print(f"Number of pages: {num_pages}")
+        print(f"Number of pages to scrape: {num_pages}")
         
-        # Scrape book URLs
-        print("Scraping book URLs...")
+        # Scrape book URLs with progress bar
         all_book_urls = await scrape_book_urls(base_url, num_pages, headers, session, semaphore)
+        print(f"Found {len(all_book_urls)} books to process")
         
-        # Scrape book details concurrently
-        print("Scraping individual book details...")
-        tasks = []
-        for book_url in all_book_urls:
-            task = asyncio.create_task(scrape_book_details(book_url, headers, session, semaphore))
-            tasks.append(task)
+        # Scrape book details concurrently with progress bar
+        tasks = [
+            scrape_book_details(book_url, headers, session, semaphore)
+            for book_url in all_book_urls
+        ]
         
         all_books = []
-        for i, task in enumerate(asyncio.as_completed(tasks)):
-            book_details = await task
+        # Using tqdm with asyncio.gather for progress tracking
+        results = await tqdm.gather(*tasks, 
+                                  desc="Scraping books", 
+                                  unit="book",
+                                  total=len(tasks))
+        
+        for book_details in results:
             if book_details:
                 all_books.append(book_details)
-                print(f"Processed book {i+1} of {len(all_book_urls)}", end='\r')
     
-    # Save to JSON file
+    # Save to JSON file with progress indication
+    print("\nSaving data to JSON file...")
     with open('books_data.json', 'w', encoding='utf-8') as f:
         json.dump(all_books, f, ensure_ascii=False, indent=4)
     
-    print(f"\nSaved {len(all_books)} books to books_data.json")
+    print(f"Successfully saved {len(all_books)} books to books_data.json")
 
 if __name__ == "__main__":
     asyncio.run(main())

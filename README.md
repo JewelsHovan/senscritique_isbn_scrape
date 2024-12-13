@@ -56,7 +56,7 @@ The script uses these default settings:
 - [x] Make page range dynamic instead of hardcoded
 - [x] Implement asynchronous requests for ISBN data collection to improve performance
 - [x] Implement concurrent workers with rate limiting
-- [ ] Add a progress bar for better user feedback
+- [x] Add a progress bar for better user feedback
 - [ ] Add error handling and retry mechanisms
 - [ ] Implement command-line arguments for configuration
 - [ ] Add data validation
