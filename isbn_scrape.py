@@ -94,6 +94,7 @@ def scrape_book_details(book_url, headers):
     time.sleep(0.2)  # Respectful delay between requests
     if response.status_code == 200:
         soup = BeautifulSoup(response.content, 'html.parser')
+        # normally I like using extruct's LDJsonExtractor but to keep it simple 
         ld_application_schema = soup.find('script', {'type': 'application/ld+json'})
         
         if ld_application_schema:
