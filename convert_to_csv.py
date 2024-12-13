@@ -4,7 +4,9 @@ import json
 import csv
 
 def flatten_json(json_obj):
-    # Convert list values to comma-separated strings
+    """
+    Flattens a JSON object by converting list values to comma-separated strings.
+    """
     flattened = {}
     for key, value in json_obj.items():
         if isinstance(value, list):

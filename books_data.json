@@ -396,6 +396,21 @@
         "publication_date": "2014-07-30T23:49:04.000Z"
     },
     {
+        "title": "Les Fleurs du mal",
+        "author": [
+            "Charles Baudelaire"
+        ],
+        "isbn": "9782081204676",
+        "description": "Une oeuvre sous forme de recueil de poèmes divisé en six parties : Spleen et idéal, Tableaux parisiens, le Vin, les Fleurs du mal, Révolte et la Mort.",
+        "genres": [
+            "Poésie"
+        ],
+        "rating": 8.2,
+        "rating_count": 47142,
+        "image_url": "https://media.senscritique.com/media/000006655127/300/les_fleurs_du_mal.jpg",
+        "publication_date": "2014-07-31T06:35:04.000Z"
+    },
+    {
         "title": "Fondation - Le Cycle de Fondation, tome 1",
         "author": [
             "Isaac Asimov"
@@ -409,21 +424,6 @@
         "rating": 8.1,
         "rating_count": 11456,
         "image_url": "https://media.senscritique.com/media/000016623850/300/fondation_le_cycle_de_fondation_tome_1.png",
-        "publication_date": "2014-07-31T06:35:04.000Z"
-    },
-    {
-        "title": "Les Fleurs du mal",
-        "author": [
-            "Charles Baudelaire"
-        ],
-        "isbn": "9782081204676",
-        "description": "Une oeuvre sous forme de recueil de poèmes divisé en six parties : Spleen et idéal, Tableaux parisiens, le Vin, les Fleurs du mal, Révolte et la Mort.",
-        "genres": [
-            "Poésie"
-        ],
-        "rating": 8.2,
-        "rating_count": 47142,
-        "image_url": "https://media.senscritique.com/media/000006655127/300/les_fleurs_du_mal.jpg",
         "publication_date": "2014-07-31T06:35:04.000Z"
     },
     {
@@ -442,21 +442,6 @@
         "publication_date": "2010-09-23T22:00:00.000Z"
     },
     {
-        "title": "Ma Mercedes est plus grosse que la tienne",
-        "author": [
-            "Nkem Nwankwo"
-        ],
-        "isbn": "9782842610456",
-        "description": "",
-        "genres": [
-            "Roman"
-        ],
-        "rating": 6.6,
-        "rating_count": 12,
-        "image_url": "https://media.senscritique.com/media/000000111488/300/ma_mercedes_est_plus_grosse_que_la_tienne.jpg",
-        "publication_date": "2011-04-02T22:00:00.000Z"
-    },
-    {
         "title": "Les Guerriers de l'hiver",
         "author": [
             "Olivier Norek"
@@ -470,6 +455,21 @@
         "rating_count": 106,
         "image_url": "https://media.senscritique.com/media/000022304843/300/les_guerriers_de_l_hiver.webp",
         "publication_date": null
+    },
+    {
+        "title": "Ma Mercedes est plus grosse que la tienne",
+        "author": [
+            "Nkem Nwankwo"
+        ],
+        "isbn": "9782842610456",
+        "description": "",
+        "genres": [
+            "Roman"
+        ],
+        "rating": 6.6,
+        "rating_count": 12,
+        "image_url": "https://media.senscritique.com/media/000000111488/300/ma_mercedes_est_plus_grosse_que_la_tienne.jpg",
+        "publication_date": "2011-04-02T22:00:00.000Z"
     },
     {
         "title": "Je n'ai pas de bouche et il faut que je crie",
@@ -995,21 +995,6 @@
         "publication_date": "2014-07-31T06:35:04.000Z"
     },
     {
-        "title": "Le Monde de Barney",
-        "author": [
-            "Mordecai Richler"
-        ],
-        "isbn": "9782253149958",
-        "description": "Drôle de vie que celle de Barney !\r\nBarney Panofsky, juif canadien, expatrié dans les années cinquante à Paris, où il a côtoyé la bohème artistique. De retour au pays, il devient importateur de fromages français, puis producteur de télévision.\r\nDe ses trois épouses, la première, nymphomane, se suicidera. Il abandonnera la deuxième le jour même de leur mariage. Quant à la troisième, elle le quittera au bout de trente-six ans.\r\nAccusé du meurtre d'un de ses copains, Barney finira solitaire et poivrot, laissant cette autobiographie.\r\nDrôle d'histoire ? Oui. Ecrite d'une plume virtuose, avec un humour et un souffle ahurissants. Et l'un des plus grands romans du Canada anglophone d'aujourd'hui.",
-        "genres": [
-            "Roman"
-        ],
-        "rating": 8.1,
-        "rating_count": 18,
-        "image_url": "https://media.senscritique.com/media/000000157603/300/le_monde_de_barney.jpg",
-        "publication_date": "2010-09-23T22:00:00.000Z"
-    },
-    {
         "title": "Ma Mercedes est plus grosse que la tienne",
         "author": [
             "Nkem Nwankwo"
@@ -1025,19 +1010,19 @@
         "publication_date": "2011-04-02T22:00:00.000Z"
     },
     {
-        "title": "Les Guerriers de l'hiver",
+        "title": "Le Monde de Barney",
         "author": [
-            "Olivier Norek"
+            "Mordecai Richler"
         ],
-        "isbn": "9782749947204",
-        "description": "« Je suis certain que nous avons réveillé leur satané Sisu.\r\n– Je ne parle pas leur langue, camarade.\r\n– Et je ne pourrais te traduire ce mot, car il n’a d’équivalent nulle part ailleurs. Le Sisu est l’âme de la Finlande. Il dit le courage, la force intérieure, la ténacité, la résistance, la détermination…\r\nUne vie austère, dans un environnement hostile, a forgé leur mental d’un acier qui nous résiste aujourd’hui. »\r\nImaginez un pays minuscule.\r\nImaginez-en un autre, gigantesque.\r\nImaginez maintenant qu’ils s’affrontent.\r\nAu cœur du plus mordant de ses hivers, au cœur de la guerre la plus meurtrière de son histoire, un peuple se dresse contre l’ennemi, et parmi ses soldats naît une légende.\r\nLa légende de Simo, la Mort Blanche.",
+        "isbn": "9782253149958",
+        "description": "Drôle de vie que celle de Barney !\r\nBarney Panofsky, juif canadien, expatrié dans les années cinquante à Paris, où il a côtoyé la bohème artistique. De retour au pays, il devient importateur de fromages français, puis producteur de télévision.\r\nDe ses trois épouses, la première, nymphomane, se suicidera. Il abandonnera la deuxième le jour même de leur mariage. Quant à la troisième, elle le quittera au bout de trente-six ans.\r\nAccusé du meurtre d'un de ses copains, Barney finira solitaire et poivrot, laissant cette autobiographie.\r\nDrôle d'histoire ? Oui. Ecrite d'une plume virtuose, avec un humour et un souffle ahurissants. Et l'un des plus grands romans du Canada anglophone d'aujourd'hui.",
         "genres": [
             "Roman"
         ],
-        "rating": 7.6,
-        "rating_count": 106,
-        "image_url": "https://media.senscritique.com/media/000022304843/300/les_guerriers_de_l_hiver.webp",
-        "publication_date": null
+        "rating": 8.1,
+        "rating_count": 18,
+        "image_url": "https://media.senscritique.com/media/000000157603/300/le_monde_de_barney.jpg",
+        "publication_date": "2010-09-23T22:00:00.000Z"
     },
     {
         "title": "Je n'ai pas de bouche et il faut que je crie",
@@ -1053,6 +1038,21 @@
         "rating_count": 203,
         "image_url": "https://media.senscritique.com/media/000006755712/300/je_n_ai_pas_de_bouche_et_il_faut_que_je_crie.jpg",
         "publication_date": "2011-01-05T23:00:00.000Z"
+    },
+    {
+        "title": "Les Guerriers de l'hiver",
+        "author": [
+            "Olivier Norek"
+        ],
+        "isbn": "9782749947204",
+        "description": "« Je suis certain que nous avons réveillé leur satané Sisu.\r\n– Je ne parle pas leur langue, camarade.\r\n– Et je ne pourrais te traduire ce mot, car il n’a d’équivalent nulle part ailleurs. Le Sisu est l’âme de la Finlande. Il dit le courage, la force intérieure, la ténacité, la résistance, la détermination…\r\nUne vie austère, dans un environnement hostile, a forgé leur mental d’un acier qui nous résiste aujourd’hui. »\r\nImaginez un pays minuscule.\r\nImaginez-en un autre, gigantesque.\r\nImaginez maintenant qu’ils s’affrontent.\r\nAu cœur du plus mordant de ses hivers, au cœur de la guerre la plus meurtrière de son histoire, un peuple se dresse contre l’ennemi, et parmi ses soldats naît une légende.\r\nLa légende de Simo, la Mort Blanche.",
+        "genres": [
+            "Roman"
+        ],
+        "rating": 7.6,
+        "rating_count": 106,
+        "image_url": "https://media.senscritique.com/media/000022304843/300/les_guerriers_de_l_hiver.webp",
+        "publication_date": null
     },
     {
         "title": "1984",
@@ -1071,22 +1071,6 @@
         "publication_date": "2014-07-31T00:06:04.000Z"
     },
     {
-        "title": "La Mort immortelle",
-        "author": [
-            "Liu Cixin"
-        ],
-        "isbn": "9781466853454",
-        "description": "Un demi-siècle après l’Ultime Bataille, l’équilibre précaire dû à la dissuasion de la forêt sombre continue de maintenir les envahisseurs trisolariens à distance. La Terre jouit d’une prospérité sans précédent due au transfert des connaissances et des technologies trisolariennes. La science humaine connaît des progrès pour ainsi dire quotidiens, les Trisolariens découvrent avec fascination la culture humaine et l’espoir grandit que les deux civilisations puissent bientôt coexister pacifiquement sans la terrible menace d’une annihilation réciproque. Mais lorsqu’une ingénieure en aéronautique originaire du début du XXIe siècle sort de son hibernation, elle réveille avec elle le souvenir d’un programme qui menace cet équilibre. Bientôt, l’humanité aura à faire un choix : partir à la conquête d’autres univers ou mourir dans son berceau. Après Le Problème à trois corps et La Forêt sombre, Liu Cixin referme l’un des cycles de science-fiction les plus ambitieux de ce siècle.",
-        "genres": [
-            "Roman",
-            "Science-fiction"
-        ],
-        "rating": 8,
-        "rating_count": 795,
-        "image_url": "https://media.senscritique.com/media/000018054969/300/la_mort_immortelle.jpg",
-        "publication_date": "2015-05-27T14:36:01.000Z"
-    },
-    {
         "title": "La Forêt sombre",
         "author": [
             "Liu Cixin"
@@ -1101,6 +1085,22 @@
         "rating_count": 1053,
         "image_url": "https://media.senscritique.com/media/000017316314/300/la_foret_sombre.jpg",
         "publication_date": "2017-10-10T12:56:20.000Z"
+    },
+    {
+        "title": "La Mort immortelle",
+        "author": [
+            "Liu Cixin"
+        ],
+        "isbn": "9781466853454",
+        "description": "Un demi-siècle après l’Ultime Bataille, l’équilibre précaire dû à la dissuasion de la forêt sombre continue de maintenir les envahisseurs trisolariens à distance. La Terre jouit d’une prospérité sans précédent due au transfert des connaissances et des technologies trisolariennes. La science humaine connaît des progrès pour ainsi dire quotidiens, les Trisolariens découvrent avec fascination la culture humaine et l’espoir grandit que les deux civilisations puissent bientôt coexister pacifiquement sans la terrible menace d’une annihilation réciproque. Mais lorsqu’une ingénieure en aéronautique originaire du début du XXIe siècle sort de son hibernation, elle réveille avec elle le souvenir d’un programme qui menace cet équilibre. Bientôt, l’humanité aura à faire un choix : partir à la conquête d’autres univers ou mourir dans son berceau. Après Le Problème à trois corps et La Forêt sombre, Liu Cixin referme l’un des cycles de science-fiction les plus ambitieux de ce siècle.",
+        "genres": [
+            "Roman",
+            "Science-fiction"
+        ],
+        "rating": 8,
+        "rating_count": 795,
+        "image_url": "https://media.senscritique.com/media/000018054969/300/la_mort_immortelle.jpg",
+        "publication_date": "2015-05-27T14:36:01.000Z"
     },
     {
         "title": "Contes et récits des arts martiaux de Chine et du Japon",
