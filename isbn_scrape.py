@@ -13,6 +13,31 @@ from bs4 import BeautifulSoup
 import time
 import json
 
+
+def get_num_pages(base_url, headers):
+    """
+    Retrieves the total number of pages in a SensCritique collection.
+
+    Args:
+        base_url (str): The base URL of the collection.
+        headers (dict): HTTP headers to use in the request.
+
+    Returns:
+        int: The total number of pages, or None if an error occurs.
+    """
+    response = requests.get(base_url, headers=headers)
+    soup = BeautifulSoup(response.content, 'html.parser')
+    nav = soup.find('nav', {'aria-label': 'Navigation de la pagination'})
+    if nav:
+        last_span = nav.find_all('span')[-1] # Get the last span in the list
+        number_str = last_span.text
+        try:
+            number = int(number_str)
+            return number
+        except ValueError:
+            print("Could not convert to integer")
+    return None
+
 def scrape_book_urls(base_url, page_end, headers):
     """
     Scrapes book URLs from multiple pages of a SensCritique collection.
@@ -96,11 +121,13 @@ if __name__ == "__main__":
 
     # CHANGE THESE VALUES TO CHANGE THE COLLECTION SCRAPED
     base_url = "https://www.senscritique.com/spif/collection?universe=2"
-    page_end = 5  # Currently hardcoded, should be made dynamic
+
+    num_pages = get_num_pages(base_url, headers)
+    print(f"Number of pages: {num_pages}")
 
     # Scrape book URLs
     print("Scraping book URLs...")
-    all_book_urls = scrape_book_urls(base_url, page_end, headers)
+    all_book_urls = scrape_book_urls(base_url, num_pages, headers)
 
     # Scrape details for each book (this could be sped up with async requests)
     print("Scraping individual book details...")

@@ -42,13 +42,12 @@ The script will create a `books_data.json` file containing all scraped book info
 ## Configuration
 
 Currently, the script uses these default settings:
-- Base URL: `https://www.senscritique.com/spif/collection?universe=2`
-- Pages to scrape: 5
+- Base URL: `https://www.senscritique.com/spif/collection?universe=2` (check this to point to a different collection url)
 - Request delay: 0.2 seconds
 
 ## To Do
 
-- [ ] Make page range dynamic instead of hardcoded
+- [x] Make page range dynamic instead of hardcoded
 - [ ] Implement asynchronous requests for ISBN data collection to improve performance
 - [ ] Add a progress bar for better user feedback
 - [ ] Add error handling and retry mechanisms
