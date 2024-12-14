@@ -1,155 +1,185 @@
 """
-This module asynchronously scrapes book data from SensCritique and saves it to a JSON file.
+Enhanced book scraper using GraphQL API for collection data and asynchronous requests for details.
 
-It utilizes aiohttp for asynchronous HTTP requests and BeautifulSoup for parsing HTML content.
-The script implements concurrent scraping with rate limiting to respectfully fetch data from 
-SensCritique's website. It iterates through multiple pages of a collection, extracts book URLs,
-and then concurrently scrapes details from each book's page. The extracted data includes:
+This script performs the following actions:
+1. Fetches a list of books from a user's collection on SensCritique using the GraphQL API.
+2. Scrapes detailed information for each book by making asynchronous requests to their individual pages.
+3. Saves the collected book data into a JSON file.
 
-- Title
-- Author(s)
-- ISBN
-- Description
-- Genres
-- Rating
-- Rating count
-- Image URL
-- Publication date
-
-The collected data is saved into a JSON file named 'books_data.json'.
+The script is designed to be efficient by using asynchronous programming to handle multiple requests concurrently,
+and it provides progress updates using tqdm.
 """
 
-from bs4 import BeautifulSoup
 import json
-import aiohttp
 import asyncio
-from asyncio import Semaphore
+import aiohttp
+from bs4 import BeautifulSoup
+from typing import List, Dict, Any
+from dataclasses import dataclass
 from tqdm.asyncio import tqdm
-from tqdm import tqdm as sync_tqdm
-from config import BASE_URL, NUM_WORKERS, DELAY_TIME
-
-async def get_num_pages(base_url, headers, session):
+from config import (
+    NUM_WORKERS, DELAY_TIME, BATCH_SIZE, USERNAME, 
+    UNIVERSE, SORT_ORDER, CATEGORY_ID, GENRE_ID, 
+    KEYWORDS, YEAR_DONE, YEAR_RELEASE
+)
+@dataclass
+class GraphQLConfig:
     """
-    Asynchronously fetches the total number of pages in the book collection.
+    Configuration for GraphQL requests.
+
+    Attributes:
+        URL (str): The URL endpoint for the GraphQL API.
+        HEADERS (Dict[str, str]): Headers to be used in the GraphQL requests.
+        QUERY (str): The GraphQL query to fetch user collection data.
+    """
+    URL: str = "https://apollo.senscritique.com/"
+    HEADERS: Dict[str, str] = None
+    QUERY: str = """
+    query UserCollection($action: ProductAction, $categoryId: Int, $gameSystemId: Int, 
+                        $genreId: Int, $isAgenda: Boolean, $keywords: String, $limit: Int, 
+                        $month: Int, $offset: Int, $order: CollectionSort, $showTvAgenda: Boolean, 
+                        $universe: String, $username: String!, $versus: Boolean, $year: Int, 
+                        $yearDateDone: Int, $yearDateRelease: Int) {
+        user(username: $username) {
+            collection(
+                action: $action
+                categoryId: $categoryId
+                gameSystemId: $gameSystemId
+                genreId: $genreId
+                isAgenda: $isAgenda
+                keywords: $keywords
+                limit: $limit
+                month: $month
+                offset: $offset
+                order: $order
+                showTvAgenda: $showTvAgenda
+                universe: $universe
+                versus: $versus
+                year: $year
+                yearDateDone: $yearDateDone
+                yearDateRelease: $yearDateRelease
+            ) {
+                total
+                products {
+                    title
+                    id
+                    url
+                    yearOfProduction
+                    __typename
+                }
+                __typename
+            }
+        }
+    }
+    """
+
+async def fetch_collection_data(session: aiohttp.ClientSession, 
+                              config: GraphQLConfig, 
+                              variables: Dict[str, Any]) -> Dict:
+    """
+    Fetches collection data using the GraphQL API.
 
     Args:
-        base_url (str): The base URL of the SensCritique collection.
-        headers (dict): HTTP headers for the request.
         session (aiohttp.ClientSession): The aiohttp client session.
+        config (GraphQLConfig): Configuration for the GraphQL request.
+        variables (Dict[str, Any]): Variables to be used in the GraphQL query.
 
     Returns:
-        int or None: The total number of pages, or None if an error occurs.
-    """
-    # Send a GET request to the base URL with specified headers
-    async with session.get(base_url, headers=headers) as response:
-        # Check if the request was successful
-        if response.status == 200:
-            # Parse the HTML content of the page
-            content = await response.text()
-            soup = BeautifulSoup(content, 'html.parser')
-            # Find the navigation element for pagination
-            nav = soup.find('nav', {'aria-label': 'Navigation de la pagination'})
-            if nav:
-                # Get the last span in the list
-                last_span = nav.find_all('span')[-1]
-                # Extract the number from the text of the last span
-                number_str = last_span.text
-                try:
-                    # Convert the number string to an integer
-                    number = int(number_str)
-                    return number
-                except ValueError:
-                    print("Could not convert to integer")
-        return None
+        Dict: The JSON response from the GraphQL API.
 
-async def scrape_book_urls(base_url, page_end, headers, session, semaphore):
+    Raises:
+        aiohttp.ClientResponseError: If the response status is not ok.
     """
-    Asynchronously scrapes book URLs from multiple pages of a SensCritique collection.
+    payload = {
+        "operationName": "UserCollection",
+        "variables": variables,
+        "query": config.QUERY
+    }
+    
+    async with session.post(config.URL, 
+                          headers=config.HEADERS, 
+                          json=payload) as response:
+        response.raise_for_status()
+        return await response.json()
+
+async def collect_all_books(session: aiohttp.ClientSession, 
+                          config: GraphQLConfig) -> List[Dict]:
+    """
+    Collects all books from the collection using pagination.
 
     Args:
-        base_url (str): The base URL for the SensCritique collection.
-        page_end (int): The last page number to scrape.
-        headers (dict): HTTP headers for the request.
         session (aiohttp.ClientSession): The aiohttp client session.
+        config (GraphQLConfig): Configuration for the GraphQL request.
+
+    Returns:
+        List[Dict]: A list of dictionaries, each representing a book.
+    """
+    all_results = []
+    offset = 0
+    limit = BATCH_SIZE
+    
+    variables = {
+        "action": None,
+        "categoryId": CATEGORY_ID,
+        "gameSystemId": None,
+        "genreId": GENRE_ID,
+        "keywords": KEYWORDS,
+        "limit": limit,
+        "offset": 0,
+        "order": SORT_ORDER,
+        "universe": UNIVERSE,
+        "username": USERNAME,
+        "yearDateDone": YEAR_DONE,
+        "yearDateRelease": YEAR_RELEASE
+    }
+
+    with tqdm(desc="Collecting book URLs") as pbar:
+        while True:
+            variables["offset"] = offset
+            try:
+                data = await fetch_collection_data(session, config, variables)
+                products = data.get("data", {}).get("user", {}).get("collection", {}).get("products", [])
+                
+                if not products:
+                    break
+                    
+                all_results.extend(products)
+                offset += limit
+                pbar.update(len(products))
+                
+            except Exception as e:
+                print(f"Error fetching offset {offset}: {e}")
+                break
+    
+    return all_results
+
+async def scrape_book_details(session: aiohttp.ClientSession, 
+                            book: Dict, 
+                            semaphore: asyncio.Semaphore) -> Dict:
+    """
+    Scrapes detailed information for a single book.
+
+    Args:
+        session (aiohttp.ClientSession): The aiohttp client session.
+        book (Dict): A dictionary representing a book with at least a 'url' key.
         semaphore (asyncio.Semaphore): Semaphore to limit concurrent requests.
 
     Returns:
-        list: A list of URLs to individual book pages.
+        Dict: A dictionary containing detailed information about the book, or None if an error occurs.
     """
-    all_book_urls = []
-    
-    # Initialize a progress bar to track the scraping of pages
-    with sync_tqdm(total=page_end, desc="Scraping pages", unit="page") as pbar:
-        page_number = 1
-        # Loop through each page number up to the last page
-        while page_number <= page_end:
-            # Use a semaphore to limit the number of concurrent requests
-            async with semaphore:
-                # Introduce a small delay to avoid overwhelming the server
-                await asyncio.sleep(0.2)
-                # Construct the URL for the current page
-                url = f"{base_url}?page={page_number}"
-                # Send a GET request to the URL with specified headers
-                async with session.get(url, headers=headers) as response:
-                    # Check if the request was successful
-                    if response.status == 200:
-                        # Parse the HTML content of the page
-                        content = await response.text()
-                        soup = BeautifulSoup(content, 'html.parser')
-                        # Find all book elements on the page
-                        book_elements = soup.find_all('div', {'data-testid': 'product-list-item'})
+    async with semaphore:
+        try:
 
-                        # If no book elements are found, exit the loop
-                        if not book_elements:
-                            break
-
-                        # Iterate through each book element
-                        for book_element in book_elements:
-                            # Find the title element of the book
-                            title_element = book_element.find('a', {'data-testid': 'product-title'})
-                            # If a title element is found
-                            if title_element:
-                                # Construct the full URL to the book's page
-                                book_url = "https://www.senscritique.com" + title_element['href']
-                                # Add the book URL to the list of all book URLs
-                                all_book_urls.append(book_url)
-                    else:
-                        # Print an error message if the page could not be fetched
-                        print(f"\nError fetching page {page_number}: Status code {response.status}")
-                        break
-            # Update the progress bar after each page is processed
-            pbar.update(1)
-            # Increment the page number to move to the next page
-            page_number += 1
-    
-    # Return the list of all scraped book URLs
-    return all_book_urls
-
-async def scrape_book_details(book_url, headers, session, semaphore):
-    """
-    Asynchronously scrapes details of a single book from its SensCritique page.
-
-    Args:
-        book_url (str): The URL of the book's page.
-        headers (dict): HTTP headers for the request.
-        session (aiohttp.ClientSession): The aiohttp client session.
-        semaphore (asyncio.Semaphore): Semaphore to limit concurrent requests.
-
-    Returns:
-        dict or None: A dictionary containing book details, or None if an error occurs.
-    """
-    async with semaphore:  # Limit concurrent requests
-        await asyncio.sleep(DELAY_TIME)  # Respectful delay
-        async with session.get(book_url, headers=headers) as response:
-            if response.status == 200:
+            await asyncio.sleep(DELAY_TIME)
+            async with session.get(f"https://www.senscritique.com{book['url']}") as response:
                 content = await response.text()
                 soup = BeautifulSoup(content, 'html.parser')
-                # normally I like using extruct's LDJsonExtractor but to keep it simple 
-                ld_application_schema = soup.find('script', {'type': 'application/ld+json'})
                 
-                if ld_application_schema:
-                    book_data = json.loads(ld_application_schema.string)
-                    book_details = {
+                ld_json = soup.find('script', {'type': 'application/ld+json'})
+                if ld_json:
+                    book_data = json.loads(ld_json.string)
+                    return {
+                        'id': book['id'],
                         'title': book_data.get('name'),
                         'author': [creator['name'] for creator in book_data.get('creator', [])],
                         'isbn': book_data.get('isbn'),
@@ -158,55 +188,51 @@ async def scrape_book_details(book_url, headers, session, semaphore):
                         'rating': book_data.get('aggregateRating', {}).get('ratingValue'),
                         'rating_count': book_data.get('aggregateRating', {}).get('ratingCount'),
                         'image_url': book_data.get('image'),
-                        'publication_date': book_data.get('dateCreated')
+                        'publication_date': book_data.get('dateCreated'),
+                        'year_of_production': book['yearOfProduction']
                     }
-                    return book_details
-    return None
+        except Exception as e:
+            print(f"Error scraping book {book['url']}: {e}")
+            return None
 
 async def main():
     """
-    Main asynchronous function with enhanced progress tracking.
+    Main execution function.
+
+    This function orchestrates the scraping process:
+    1. Collects all book URLs from the user's collection.
+    2. Scrapes details for each book concurrently.
+    3. Saves the results to a JSON file.
     """
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36'
+    config = GraphQLConfig()
+    config.HEADERS = {
+        'accept': '*/*',
+        'accept-language': 'en-US,en;q=0.9',
+        'content-type': 'application/json',
+        'origin': 'https://www.senscritique.com',
+        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
     }
-    base_url = BASE_URL
-    
-    # Create semaphore for concurrent workers
-    semaphore = Semaphore(NUM_WORKERS)
-    
+
     async with aiohttp.ClientSession() as session:
-        # Get number of pages
-        num_pages = await get_num_pages(base_url, headers, session)
-        print(f"Number of pages to scrape: {num_pages}")
-        
-        # Scrape book URLs with progress bar
-        all_book_urls = await scrape_book_urls(base_url, num_pages, headers, session, semaphore)
-        print(f"Found {len(all_book_urls)} books to process")
-        
-        # Scrape book details concurrently with progress bar
+        # Collect all book URLs
+        books = await collect_all_books(session, config)
+        print(f"\nFound {len(books)} books")
+
+        # Scrape details for each book
+        semaphore = asyncio.Semaphore(NUM_WORKERS)  # Limit concurrent requests
         tasks = [
-            scrape_book_details(book_url, headers, session, semaphore)
-            for book_url in all_book_urls
+            scrape_book_details(session, book, semaphore)
+            for book in books
         ]
         
-        all_books = []
-        # Using tqdm with asyncio.gather for progress tracking
-        results = await tqdm.gather(*tasks, 
-                                  desc="Scraping books", 
-                                  unit="book",
-                                  total=len(tasks))
-        
-        for book_details in results:
-            if book_details:
-                all_books.append(book_details)
-    
-    # Save to JSON file with progress indication
-    print("\nSaving data to JSON file...")
-    with open('books_data.json', 'w', encoding='utf-8') as f:
-        json.dump(all_books, f, ensure_ascii=False, indent=4)
-    
-    print(f"Successfully saved {len(all_books)} books to books_data.json")
+        results = await tqdm.gather(*tasks, desc="Scraping book details")
+        # Filter out None results (failed scrapes)
+        valid_results = [r for r in results if r is not None]
+
+        # Save results
+        print(f"\nSuccessfully scraped {len(valid_results)} books")
+        with open('books_data.json', 'w', encoding='utf-8') as f:
+            json.dump(valid_results, f, ensure_ascii=False, indent=2)
 
 if __name__ == "__main__":
     asyncio.run(main())

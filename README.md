@@ -1,13 +1,13 @@
-# SensCritique Book Scraper
+# SensCritique Collection Scraper
 
-An asynchronous Python script that efficiently scrapes book data from SensCritique collections and saves it to a JSON file. The script uses concurrent workers to collect comprehensive book details including titles, authors, ISBNs, descriptions, genres, ratings, and more.
+An asynchronous Python script that efficiently scrapes collection data from SensCritique and saves it to JSON and CSV formats. The script uses concurrent workers to collect comprehensive details including titles, authors, ISBNs, descriptions, genres, ratings, and more.
 
 ## Features
 
 - Asynchronous scraping using aiohttp for improved performance
-- Concurrent processing with 3 workers and rate limiting
-- Scrapes multiple pages of book collections from SensCritique
-- Extracts detailed book information including:
+- Concurrent processing with configurable workers and rate limiting
+- Scrapes multiple pages of collections from SensCritique
+- Extracts detailed information including:
   - Title
   - Author(s)
   - ISBN
@@ -16,56 +16,98 @@ An asynchronous Python script that efficiently scrapes book data from SensCritiq
   - Rating and rating count
   - Cover image URL
   - Publication date
-- Saves data in a structured JSON format
-- Implements respectful scraping with 0.2s delay between requests
+- Saves data in both JSON and CSV formats (CSV format compatible with Goodreads import)
+- Implements respectful scraping with configurable delays between requests
 - Uses proper User-Agent headers
 
 ## Requirements
 
-```python
-python
+```bash
+python 3.7+
 aiohttp
 beautifulsoup4
 asyncio
+tqdm
 ```
 
-## Usage
+## Installation
 
 1. Clone the repository
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-3. Run the script:
-   ```bash
-   python isbn_scrape.py
-   ```
-
-The script will create a `books_data.json` file containing all scraped book information.
 
 ## Configuration
 
-The script uses these default settings:
-- Base URL: `https://www.senscritique.com/spif/collection?universe=2`
-- Concurrent workers: 3
-- Request delay: 0.2 seconds
-- These settings can be adjusted in the config.py file
+Edit `config.py` to customize the scraping behavior:
 
-## To Do
+```python
+# Scraping behavior settings
+NUM_WORKERS = 3        # Number of concurrent workers
+DELAY_TIME = 0.2      # Delay between requests in seconds
+BATCH_SIZE = 18       # Number of items per request
 
-- [x] Make page range dynamic instead of hardcoded
-- [x] Implement asynchronous requests for ISBN data collection to improve performance
-- [x] Implement concurrent workers with rate limiting
-- [x] Add a progress bar for better user feedback
-- [ ] Add error handling and retry mechanisms
-- [ ] Implement command-line arguments for configuration
-- [ ] Add data validation
-- [ ] Create proper logging system
+# Collection parameters
+USERNAME = "spif"     # Username whose collection to scrape
+UNIVERSE = "book"     # Type of media: "book", "movie", "game", etc.
+SORT_ORDER = "LAST_ACTION_DESC"  # How to sort the results
+
+# Optional filters (set to None to disable)
+CATEGORY_ID = None    # Filter by category
+GENRE_ID = None      # Filter by genre
+KEYWORDS = ""        # Search terms
+YEAR_DONE = None     # Filter by completion year
+YEAR_RELEASE = None  # Filter by release year
+```
+
+## Usage
+
+1. Update the configuration in `config.py` with your desired settings (especially the USERNAME)
+
+2. Run the scraper:
+   ```bash
+   python isbn_scrape.py
+   ```
+   This will create a `books_data.json` file containing all scraped information.
+
+3. (Optional) Convert the JSON data to CSV format:
+   ```bash
+   python convert_to_csv.py
+   ```
+   This will create a `books_data.csv` file in Goodreads-compatible format.
+
+## Output Files
+
+- `books_data.json`: Raw scraped data in JSON format
+- `books_data.csv`: Converted data in Goodreads-compatible CSV format
+
+## Performance Notes
+
+- The asynchronous implementation with configurable concurrent workers improves scraping performance
+- Default settings (3 workers, 0.2s delay) provide a good balance between speed and server respect
+- Adjust NUM_WORKERS and DELAY_TIME in config.py based on your needs and server limitations
 
 ## Legal Notice
 
 Please ensure you comply with SensCritique's terms of service and robots.txt when using this scraper. The script implements appropriate delays and rate limiting between requests to avoid overwhelming their servers.
 
-## Performance Note
+## To Do
 
-The asynchronous implementation with 3 concurrent workers significantly improves scraping performance while maintaining respectful request rates. The 0.2-second delay between requests ensures the script doesn't overwhelm the server.
+- [x] Make page range dynamic instead of hardcoded
+- [x] Implement asynchronous requests
+- [x] Implement concurrent workers with rate limiting
+- [x] Add a progress bar for better user feedback
+- [x] Add CSV export functionality
+- [ ] Add error handling and retry mechanisms
+- [ ] Implement command-line arguments for configuration
+- [ ] Add data validation
+- [ ] Create proper logging system
+
+## Troubleshooting
+
+If you encounter issues:
+1. Verify your internet connection
+2. Check if the username in config.py is correct
+3. Try increasing DELAY_TIME if you're getting rate limited
+4. Ensure you have the correct Python version and all dependencies installed
